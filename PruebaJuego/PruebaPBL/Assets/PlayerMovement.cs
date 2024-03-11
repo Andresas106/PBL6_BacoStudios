@@ -33,7 +33,6 @@ public class PlayerMovement : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0f, moveVertical);
 
         bool isGrounded = Physics.Raycast(transform.position, -transform.up, groundDistance, groundMask);
-        Debug.Log(isGrounded);
 
         if(isGrounded)
         {
