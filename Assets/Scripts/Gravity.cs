@@ -12,6 +12,8 @@ public class Gravity : MonoBehaviour
     float velRotation = 100;
 
     private Rigidbody rb;
+    private Quaternion targetRotation; // Rotación deseada
+
 
     float fuerzasalto = 5;
 
@@ -39,9 +41,12 @@ public class Gravity : MonoBehaviour
 
         Physics.gravity = planetas[planetaCercano].transform.position - transform.position;
 
-        transform.rotation = Quaternion.FromToRotation(transform.up, -Physics.gravity) * transform.rotation;
+        targetRotation = Quaternion.FromToRotation(transform.up, -Physics.gravity) * transform.rotation;
 
-        if(Input.GetKey(KeyCode.W)) { transform.Translate(new Vector3(0, 0, velocidad * Time.deltaTime)); }
+        // Suavizar la rotación gradualmente
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 2); // Puedes ajustar el 5 para controlar la velocidad de la rotación suave
+
+        if (Input.GetKey(KeyCode.W)) { transform.Translate(new Vector3(0, 0, velocidad * Time.deltaTime)); }
         if (Input.GetKey(KeyCode.S)) { transform.Translate(new Vector3(0, 0, -velocidad * Time.deltaTime)); }
         if (Input.GetKey(KeyCode.A)) { transform.Rotate(new Vector3(0, -velRotation * Time.deltaTime, 0)); }
         if (Input.GetKey(KeyCode.D)) { transform.Rotate(new Vector3(0, velRotation * Time.deltaTime, 0)); }
