@@ -4,7 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - PlanetCenter
+  - AreaPlanet
   layers:
   - Default
   - TransparentFX
