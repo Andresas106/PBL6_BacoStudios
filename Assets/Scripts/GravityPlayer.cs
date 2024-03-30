@@ -8,6 +8,8 @@ public class GravityPlayer : MonoBehaviour
     private static float GRAVITY_FORCE = 800;
     private List<AreasGravity> _areas;
     private Rigidbody _rb;
+    private InputManagement input;
+
 
     public Vector3 Direction
     {
@@ -25,6 +27,7 @@ public class GravityPlayer : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();
         _areas = new List<AreasGravity>();
+        input = GetComponent<InputManagement>();
     }
 
     // Update is called once per frame
