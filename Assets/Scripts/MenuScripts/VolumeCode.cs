@@ -28,11 +28,11 @@ public class VolumeCode : MonoBehaviour
     {
         if (sliderValue == 0)
         {
-            imageMute.enable = true;
+//            imageMute.enable = true;
         }
         else
         {
-            imageMute.enable = false;
+//            imageMute.enable = false;
         }
     }
 }

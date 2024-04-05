@@ -15,9 +15,13 @@ public class AreasGravity : MonoBehaviour
 
     public Vector3 GetGravity(GravityPlayer gravityPlayer)
     {
-       if(gameObject.tag == "AreaPlanet")
+        if(gameObject.tag == "AreaPlanet")
         {
             return (transform.position - gravityPlayer.transform.position).normalized; 
+        }
+        else if(gameObject.tag == "AreaGround")
+        {
+            return -transform.up;
         }
 
         return Vector3.zero;
