@@ -10,6 +10,7 @@ public class CharacerMovement : MonoBehaviour
     private GravityPlayer _gp;
 
     private Vector2 currentMovementInput;
+    private Vector3 direction;
     private bool isMovementPressed;
     private bool isJumping;
     private bool isRunning;
@@ -19,6 +20,7 @@ public class CharacerMovement : MonoBehaviour
     public float rotationSpeed = 5.0f;
     public LayerMask _groundMask;
     public Transform _groundCheck;
+    public Camera mainCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -59,7 +61,7 @@ public class CharacerMovement : MonoBehaviour
         // Calcular la dirección del movimiento
         Vector3 _moveDirection = new Vector3(currentMovementInput.x, 0.0f, currentMovementInput.y);
 
-        Vector3 direction = transform.forward * _moveDirection.z;
+        Vector3 direction = transform.forward * _moveDirection.z;   
 
         if (isRunning)
         {
@@ -77,6 +79,8 @@ public class CharacerMovement : MonoBehaviour
 
     void handleRotation()
     {
+
+
         // Solo rotamos al personaje si hay entrada de movimiento
         if (isMovementPressed)
         {
