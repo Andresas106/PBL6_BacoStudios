@@ -6,6 +6,7 @@ TagManager:
   tags:
   - AreaPlanet
   - AreaGround
+  - AreaPoint
   layers:
   - Default
   - TransparentFX

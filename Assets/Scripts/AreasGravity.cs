@@ -5,6 +5,7 @@ using UnityEngine;
 public class AreasGravity : MonoBehaviour
 {
     [SerializeField] private int _priority;
+    [SerializeField] private Vector3 _center;
     public int Priority => _priority;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,10 @@ public class AreasGravity : MonoBehaviour
         else if(gameObject.tag == "AreaGround")
         {
             return -transform.up;
+        }
+        else if(gameObject.tag == "AreaPoint")
+        {
+            return (_center - gravityPlayer.transform.position).normalized;
         }
 
         return Vector3.zero;
