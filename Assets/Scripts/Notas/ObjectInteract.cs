@@ -2,17 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Recojer_notas : MonoBehaviour
+public class ObjectInteract : MonoBehaviour
 {
+    [SerializeField] private ObjectCount obj_count;
+    
+
+    void Start()
+    {
+        obj_count = GameObject.FindGameObjectWithTag("Player").GetComponent<ObjectCount>();
+    }
+
     /// Este método se llama cuando algo colisiona con el collider del objeto
     private void OnTriggerEnter(Collider other)
     {
         // Verifica si el objeto que colisionó tiene un componente Rigidbody
-        Rigidbody rb = other.GetComponent<Rigidbody>();
-        if (rb != null)
+        if (other.tag == "Player")
         {
-            // Destruye la moneda
+            obj_count.quantity = obj_count.quantity + 1;
             Destroy(gameObject);
+
+
         }
     }
 }
