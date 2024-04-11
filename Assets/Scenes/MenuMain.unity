@@ -2448,8 +2448,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Odissea Espacial
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9ddb1072883c0c8458a2d0f3fd9692e1, type: 2}
+  m_sharedMaterial: {fileID: -4033470054475191464, guid: 9ddb1072883c0c8458a2d0f3fd9692e1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
