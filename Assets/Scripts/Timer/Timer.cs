@@ -44,7 +44,7 @@ public class Timer : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("MainMenu"); 
+        SceneManager.LoadScene("MenuMain"); 
     }
 
     public void Quit()
