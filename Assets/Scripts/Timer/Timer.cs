@@ -12,16 +12,19 @@ public class Timer : MonoBehaviour
     [SerializeField] private float time = 90;
     [SerializeField] private GameObject gameOverMenu;
 
+    private ObjectCount notes;
+
     // Start is called before the first frame update
     void Start()
     {
         timeElapsed = time;
+        notes = GameObject.FindGameObjectWithTag("Player").GetComponent<ObjectCount>();
     }
 
     // Update is called once per frame
     private void Update()
     {
-       if(timeElapsed >= 0)
+       if(timeElapsed > 0 && notes.quantity != ObjectCount.MAX_QUANTITY)
        {
             Time.timeScale = 1;
             timeElapsed -= Time.deltaTime;
@@ -30,7 +33,7 @@ public class Timer : MonoBehaviour
 
             timertext.text = string.Format("{0:00}:{1:00}", minutes, seconds);
        }
-       else {
+       else if(timeElapsed <= 0){
             gameOverMenu.SetActive(true);
             Time.timeScale = 0;
 
