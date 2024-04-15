@@ -2006,7 +2006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timertext: {fileID: 1583650838}
-  time: 90
+  time: 5
   gameOverMenu: {fileID: 1257333749}
 --- !u!4 &1231804047
 Transform:
