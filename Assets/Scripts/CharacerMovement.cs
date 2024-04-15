@@ -14,7 +14,7 @@ public class CharacerMovement : MonoBehaviour
     private bool isMovementPressed;
     private bool isJumping;
     private bool isRunning;
-    private float _groundCheckRadius = 0.3f;
+    private float _groundCheckRadius = 1.0f;
 
     public float movementSpeed = 3.0f;
     public float rotationSpeed = 5.0f;
@@ -30,15 +30,10 @@ public class CharacerMovement : MonoBehaviour
         _gp = GetComponent<GravityPlayer>();
     }
 
-    void Update()
-    {
-        handleMovement();
-    }
-
     // Update is called once per frame
     void FixedUpdate()
     {
-        
+        handleMovement();
         handleRotation();
         handleJump();
     }
@@ -65,11 +60,11 @@ public class CharacerMovement : MonoBehaviour
 
         if (isRunning)
         {
-            _rb.MovePosition(_rb.position + direction * (movementSpeed * 2 * Time.deltaTime));
+            _rb.MovePosition(_rb.position + direction * (movementSpeed * 2 * Time.fixedDeltaTime));
         }
         else
         {
-            _rb.MovePosition(_rb.position + direction * (movementSpeed * Time.deltaTime));
+            _rb.MovePosition(_rb.position + direction * (movementSpeed * Time.fixedDeltaTime));
         }
 
         
@@ -98,10 +93,10 @@ public class CharacerMovement : MonoBehaviour
         isJumping = input.isJumping;
 
         bool isGrounded = Physics.CheckSphere(_groundCheck.position, _groundCheckRadius, _groundMask);
-
+        Debug.Log(isGrounded);
         if (isJumping && isGrounded)
         {
-            _rb.AddForce(-_gp.Direction * 4, ForceMode.Impulse);
+            _rb.AddForce(-_gp.Direction * 10, ForceMode.Impulse);
         }
     }
 }
