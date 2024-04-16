@@ -5,7 +5,7 @@ using TMPro;
 
 public class ObjectCount : MonoBehaviour
 {
-    public const int MAX_QUANTITY = 2;
+    public const int MAX_QUANTITY = 15;
     [SerializeField] private TMP_Text noteText;
      public int quantity = 0;
 
