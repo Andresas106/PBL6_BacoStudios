@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     [SerializeField] private TMP_Text timertext;
+    [SerializeField] private GameObject pauseMenu;
     private float timeElapsed;
     private int minutes, seconds;
     [SerializeField] private float time = 90;
@@ -24,7 +25,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-       if(timeElapsed > 0 && notes.quantity != ObjectCount.MAX_QUANTITY)
+       if(timeElapsed > 0 && notes.quantity != ObjectCount.MAX_QUANTITY && !pauseMenu.active)
        {
             Time.timeScale = 1;
             timeElapsed -= Time.deltaTime;

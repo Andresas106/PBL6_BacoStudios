@@ -16,12 +16,10 @@ public class CharacerMovement : MonoBehaviour
     private bool isRunning;
     private float _groundCheckRadius = 1.0f;
 
-    public float movementSpeed = 3.0f;
-    public LayerMask _groundMask;
-    public Transform _groundCheck;
-    public Camera mainCamera;
-
-    public float JumpForce;
+    [SerializeField] private float movementSpeed = 3.0f;
+    [SerializeField] private LayerMask _groundMask;
+    [SerializeField] private Transform _groundCheck;
+    [SerializeField] private float JumpForce;
 
     // Start is called before the first frame update
     void Start()

@@ -28,13 +28,18 @@ public class InputManagement : MonoBehaviour
         input.Player.Run.started += onRunInput;
         input.Player.Run.canceled += onRunInput;
 
-        input.Player.Pause.started += onPauseInput;  
-        input.Player.Pause.canceled += onPauseInput;
+        input.Player.Pause.performed += onPauseInput;  
+    }
+
+    void Update()
+    {
+        isPaused = false;
     }
 
     void FixedUpdate()
     {
         isJumping = false;
+        
     }
 
     
@@ -42,7 +47,7 @@ public class InputManagement : MonoBehaviour
     private void onPauseInput(InputAction.CallbackContext context)
     {
 
-        isRunning = context.ReadValueAsButton();
+        isPaused = context.ReadValueAsButton();
     }
 
     private void onRunInput(InputAction.CallbackContext context)
