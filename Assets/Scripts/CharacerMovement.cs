@@ -17,10 +17,11 @@ public class CharacerMovement : MonoBehaviour
     private float _groundCheckRadius = 1.0f;
 
     public float movementSpeed = 3.0f;
-    public float rotationSpeed = 5.0f;
     public LayerMask _groundMask;
     public Transform _groundCheck;
     public Camera mainCamera;
+
+    public float JumpForce;
 
     // Start is called before the first frame update
     void Start()
@@ -56,20 +57,32 @@ public class CharacerMovement : MonoBehaviour
         // Calcular la dirección del movimiento
         Vector3 _moveDirection = new Vector3(currentMovementInput.x, 0.0f, currentMovementInput.y);
 
-       /* Vector3 direction = transform.forward * _moveDirection.z;   
+        
+
+
+        Vector3 direction = transform.forward * _moveDirection.z;
+
+        //Vector3 velocity = direction * movementSpeed;
 
         if (isRunning)
         {
-            _rb.MovePosition(_rb.position + direction * (movementSpeed * 2 * Time.fixedDeltaTime));
+             _rb.MovePosition(_rb.position + direction * (movementSpeed * 2 * Time.fixedDeltaTime));
+
         }
         else
         {
             _rb.MovePosition(_rb.position + direction * (movementSpeed * Time.fixedDeltaTime));
-        }*/
+        }
 
-        
+        //Vector3 force = (velocity ) * _rb.mass / Time.fixedDeltaTime;
 
-        
+       // Debug.DrawRay(transform.position, force);
+
+        //_rb.AddForce(force, ForceMode.Force);
+
+
+
+
     }
 
     void handleRotation()
@@ -90,12 +103,13 @@ public class CharacerMovement : MonoBehaviour
 
     void handleJump()
     {
+       
         isJumping = input.isJumping;
 
         bool isGrounded = Physics.CheckSphere(_groundCheck.position, _groundCheckRadius, _groundMask);
         if (isJumping && isGrounded)
         {
-            _rb.AddForce(-_gp.Direction * 4, ForceMode.Impulse);
+            _rb.AddForce(-_gp.Direction * JumpForce, ForceMode.Impulse);
         }
     }
 }

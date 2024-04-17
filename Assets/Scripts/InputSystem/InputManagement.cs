@@ -32,6 +32,13 @@ public class InputManagement : MonoBehaviour
         input.Player.Pause.canceled += onPauseInput;
     }
 
+    void FixedUpdate()
+    {
+        isJumping = false;
+    }
+
+    
+
     private void onPauseInput(InputAction.CallbackContext context)
     {
 
