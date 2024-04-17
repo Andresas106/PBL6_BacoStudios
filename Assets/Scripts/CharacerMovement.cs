@@ -56,7 +56,7 @@ public class CharacerMovement : MonoBehaviour
         // Calcular la dirección del movimiento
         Vector3 _moveDirection = new Vector3(currentMovementInput.x, 0.0f, currentMovementInput.y);
 
-        Vector3 direction = transform.forward * _moveDirection.z;   
+       /* Vector3 direction = transform.forward * _moveDirection.z;   
 
         if (isRunning)
         {
@@ -65,7 +65,7 @@ public class CharacerMovement : MonoBehaviour
         else
         {
             _rb.MovePosition(_rb.position + direction * (movementSpeed * Time.fixedDeltaTime));
-        }
+        }*/
 
         
 
@@ -93,10 +93,9 @@ public class CharacerMovement : MonoBehaviour
         isJumping = input.isJumping;
 
         bool isGrounded = Physics.CheckSphere(_groundCheck.position, _groundCheckRadius, _groundMask);
-        Debug.Log(isGrounded);
         if (isJumping && isGrounded)
         {
-            _rb.AddForce(-_gp.Direction * 10, ForceMode.Impulse);
+            _rb.AddForce(-_gp.Direction * 4, ForceMode.Impulse);
         }
     }
 }

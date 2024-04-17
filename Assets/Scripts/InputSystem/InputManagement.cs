@@ -10,6 +10,7 @@ public class InputManagement : MonoBehaviour
     public Vector2 CurrentMovementInput { get; private set; }
     public bool isJumping { get; private set; }
     public bool isRunning { get; private set; }
+    public bool isPaused { get; private set; }
     // Start is called before the first frame update
     void Awake()
     {
@@ -26,6 +27,15 @@ public class InputManagement : MonoBehaviour
 
         input.Player.Run.started += onRunInput;
         input.Player.Run.canceled += onRunInput;
+
+        input.Player.Pause.started += onPauseInput;  
+        input.Player.Pause.canceled += onPauseInput;
+    }
+
+    private void onPauseInput(InputAction.CallbackContext context)
+    {
+
+        isRunning = context.ReadValueAsButton();
     }
 
     private void onRunInput(InputAction.CallbackContext context)
