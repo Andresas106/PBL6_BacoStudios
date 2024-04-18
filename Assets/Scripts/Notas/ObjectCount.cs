@@ -5,12 +5,12 @@ using TMPro;
 
 public class ObjectCount : MonoBehaviour
 {
-    public const int MAX_QUANTITY = 15;
+    public const int MAX_QUANTITY = 14;
     [SerializeField] private TMP_Text noteText;
      public int quantity = 0;
 
     void Update()
     {
-        noteText.text = string.Format("{0}/15", quantity);
+        noteText.text = string.Format("{0}/14", quantity);
     }
 }

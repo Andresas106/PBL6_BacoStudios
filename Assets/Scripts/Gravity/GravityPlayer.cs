@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GravityPlayer : MonoBehaviour
 {
-    private static float GRAVITY_FORCE = 4000;
+    private static float GRAVITY_FORCE = 5000;
     private List<AreasGravity> _areas;
     private Rigidbody _rb;
     private InputManagement input;
