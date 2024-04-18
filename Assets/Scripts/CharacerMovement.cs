@@ -52,7 +52,7 @@ public class CharacerMovement : MonoBehaviour
             isMovementPressed = false;
         }
 
-        // Calcular la dirección del movimiento
+        // Calcular la direcciï¿½n del movimiento
         Vector3 _moveDirection = new Vector3(currentMovementInput.x, 0.0f, currentMovementInput.y);
 
         
@@ -61,13 +61,13 @@ public class CharacerMovement : MonoBehaviour
         Vector3 direction = transform.forward * _moveDirection.z;
 
         //Vector3 velocity = direction * movementSpeed;
-        bool isGrounded = Physics.CheckSphere(_groundCheck.position, _groundCheckRadius, _groundMask);
-        if (isRunning && isGrounded)
+       
+        if (isRunning)
         {
              _rb.MovePosition(_rb.position + direction * (movementSpeed * 2 * Time.fixedDeltaTime));
 
         }
-        else if(!isRunning || (isRunning && !isGrounded))
+        else
         {
             _rb.MovePosition(_rb.position + direction * (movementSpeed * Time.fixedDeltaTime));
         }
@@ -84,7 +84,7 @@ public class CharacerMovement : MonoBehaviour
         // Solo rotamos al personaje si hay entrada de movimiento
         if (isMovementPressed)
         {
-            // Obtener la dirección de movimiento desde la entrada del jugador
+            // Obtener la direcciï¿½n de movimiento desde la entrada del jugador
             Vector3 _moveDirection = new Vector3(currentMovementInput.x, 0.0f, currentMovementInput.y);
 
             Quaternion rightDirection = Quaternion.Euler(0f, _moveDirection.x * (3000 * Time.fixedDeltaTime), 0f);

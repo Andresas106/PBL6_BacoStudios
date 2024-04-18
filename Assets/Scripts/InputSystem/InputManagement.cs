@@ -11,6 +11,7 @@ public class InputManagement : MonoBehaviour
     public bool isJumping { get; private set; }
     public bool isRunning { get; private set; }
     public bool isPaused { get; private set; }
+    public bool isInteracting { get; private set; }
     // Start is called before the first frame update
     void Awake()
     {
@@ -29,11 +30,15 @@ public class InputManagement : MonoBehaviour
         input.Player.Run.canceled += onRunInput;
 
         input.Player.Pause.performed += onPauseInput;  
+
+        input.Player.Interact.started += onInteractInput;
+        input.Player.Interact.canceled += onInteractInput;
     }
 
     void Update()
     {
         isPaused = false;
+        //isInteracting = false;
     }
 
     void FixedUpdate()
@@ -42,7 +47,11 @@ public class InputManagement : MonoBehaviour
         
     }
 
-    
+    private void onInteractInput(InputAction.CallbackContext context)
+    {
+
+        isInteracting = context.ReadValueAsButton();
+    }
 
     private void onPauseInput(InputAction.CallbackContext context)
     {
