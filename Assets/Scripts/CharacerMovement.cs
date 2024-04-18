@@ -61,22 +61,16 @@ public class CharacerMovement : MonoBehaviour
         Vector3 direction = transform.forward * _moveDirection.z;
 
         //Vector3 velocity = direction * movementSpeed;
-
-        if (isRunning)
+        bool isGrounded = Physics.CheckSphere(_groundCheck.position, _groundCheckRadius, _groundMask);
+        if (isRunning && isGrounded)
         {
              _rb.MovePosition(_rb.position + direction * (movementSpeed * 2 * Time.fixedDeltaTime));
 
         }
-        else
+        else if(!isRunning || (isRunning && !isGrounded))
         {
             _rb.MovePosition(_rb.position + direction * (movementSpeed * Time.fixedDeltaTime));
         }
-
-        //Vector3 force = (velocity ) * _rb.mass / Time.fixedDeltaTime;
-
-       // Debug.DrawRay(transform.position, force);
-
-        //_rb.AddForce(force, ForceMode.Force);
 
 
 
