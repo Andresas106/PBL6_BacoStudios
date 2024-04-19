@@ -6725,6 +6725,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: 669ce9c2dc164b644973b5c10b7fbc32, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fcd10b975182dd14cbd7f0748105aede, type: 2}
     - target: {fileID: -516098083770646512, guid: 669ce9c2dc164b644973b5c10b7fbc32, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -10771,10 +10775,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.706
       objectReference: {fileID: 0}
+    - target: {fileID: -6207737458473973628, guid: 7c3e83206b87b304f98a9b3b283b025f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 907c2ddea65377a40b9d3381bd4c3295, type: 2}
+    - target: {fileID: -1860889395081977877, guid: 7c3e83206b87b304f98a9b3b283b025f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 907c2ddea65377a40b9d3381bd4c3295, type: 2}
+    - target: {fileID: 362090844198426038, guid: 7c3e83206b87b304f98a9b3b283b025f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 907c2ddea65377a40b9d3381bd4c3295, type: 2}
     - target: {fileID: 919132149155446097, guid: 7c3e83206b87b304f98a9b3b283b025f, type: 3}
       propertyPath: m_Name
       value: Musiciano2FigaFlawas
       objectReference: {fileID: 0}
+    - target: {fileID: 3577897090704119000, guid: 7c3e83206b87b304f98a9b3b283b025f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 907c2ddea65377a40b9d3381bd4c3295, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
