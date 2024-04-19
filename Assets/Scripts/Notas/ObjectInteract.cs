@@ -19,7 +19,7 @@ public class ObjectInteract : MonoBehaviour
         if (other.tag == "Player")
         {
             obj_count.quantity = obj_count.quantity + 1;
-            Destroy(gameObject);
+            gameObject.SetActive(false);
 
 
         }

@@ -7,6 +7,7 @@ public class ConversationStarter : MonoBehaviour
 {
     private InputManagement input;
     [SerializeField] private NPCConversation myConversation;
+    [SerializeField] private GameObject myTrigger;
     // Start is called before the first frame update
     
     void Start()
@@ -22,6 +23,7 @@ public class ConversationStarter : MonoBehaviour
             {
 
                 ConversationManager.Instance.StartConversation(myConversation);
+                Destroy(myTrigger);
             }
         }
     }
