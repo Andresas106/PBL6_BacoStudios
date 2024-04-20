@@ -22,6 +22,11 @@ public class ObjectCount : MonoBehaviour
         notesTextobj.SetActive(true);
     }
 
+    public void NotesTextDisAppear()
+    {
+        notesTextobj.SetActive(false);
+    }
+
     public void NotesAppear()
     {
         notesobj.SetActive(true);

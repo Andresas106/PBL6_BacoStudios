@@ -20,13 +20,13 @@ public class LoadPause : MonoBehaviour
     {
         isPaused = input.isPaused;
 
-        if(isPaused && !pauseMenu.active)
+        if(isPaused && !pauseMenu.activeInHierarchy)
         {
             pauseMenu.SetActive(true);
             pauseExecuted = true;
             Time.timeScale = 0;
         }
-        else if(isPaused && pauseMenu.active )
+        else if(isPaused && pauseMenu.activeInHierarchy)
         {
             pauseMenu.SetActive(false);
             Time.timeScale = 1;

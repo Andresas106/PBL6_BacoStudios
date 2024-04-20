@@ -9,16 +9,24 @@ public class ConversationStarter : MonoBehaviour
     [SerializeField] private NPCConversation myConversation;
     [SerializeField] private GameObject myTrigger;
     [SerializeField] private GameObject keyE;
+
+    private CharacterMovement playerMovement;
     // Start is called before the first frame update
-    
+
     void Start()
     {
         input = GetComponent<InputManagement>();
+        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>();
     }
 
     void OnTriggerEnter(Collider other)
     {
         keyE.SetActive(true);
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        keyE.SetActive(false);
     }
 
     void OnTriggerStay(Collider other)
@@ -27,7 +35,7 @@ public class ConversationStarter : MonoBehaviour
         {
             if(input.isInteracting)
             {
-                keyE.SetActive(false);
+                keyE.SetActive(false);  
                 ConversationManager.Instance.StartConversation(myConversation);
                 Destroy(myTrigger);
             }

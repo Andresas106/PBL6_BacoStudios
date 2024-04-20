@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacerMovement : MonoBehaviour
+public class CharacterMovement : MonoBehaviour
 {
 
     private InputManagement input;
@@ -20,7 +20,6 @@ public class CharacerMovement : MonoBehaviour
     [SerializeField] private LayerMask _groundMask;
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private float JumpForce;
-    [SerializeField] private Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -47,12 +46,10 @@ public class CharacerMovement : MonoBehaviour
         if (currentMovementInput.x != 0 || currentMovementInput.y != 0)
         {
             isMovementPressed = true;
-            animator.SetBool("OnWalk", true);
         }
         else
         {
             isMovementPressed = false;
-            animator.SetBool("OnWalk", false);
         }
 
         // Calcular la direcci�n del movimiento
@@ -68,13 +65,10 @@ public class CharacerMovement : MonoBehaviour
         if (isRunning)
         {
              _rb.MovePosition(_rb.position + direction * (movementSpeed * 2 * Time.fixedDeltaTime));
-            animator.SetBool("OnRun", true);
-
         }
         else
         {
             _rb.MovePosition(_rb.position + direction * (movementSpeed * Time.fixedDeltaTime));
-            animator.SetBool("OnRun", false);
         }
 
 

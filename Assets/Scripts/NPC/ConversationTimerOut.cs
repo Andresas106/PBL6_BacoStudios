@@ -21,6 +21,11 @@ public class ConversationTimerOut : MonoBehaviour
         keyE.SetActive(true);
     }
 
+    void OnTriggerExit(Collider other)
+    {
+        keyE.SetActive(false);
+    }
+
     void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -29,7 +34,6 @@ public class ConversationTimerOut : MonoBehaviour
             {
                 keyE.SetActive(false);
                 ConversationManager.Instance.StartConversation(myConversation);
-                //Destroy(myTrigger);
             }
         }
     }
