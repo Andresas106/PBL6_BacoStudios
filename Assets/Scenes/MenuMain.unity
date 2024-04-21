@@ -3681,8 +3681,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionsPanel: {fileID: 487176323}
   mainPanel: {fileID: 1984031644}
-  menu1Panel: {fileID: 1009150599}
-  menu2Panel: {fileID: 1641560500}
+  menu1Panel: {fileID: 0}
+  menu2Panel: {fileID: 0}
   colecPanel: {fileID: 1231025879}
   colec2Panel: {fileID: 0}
   i: 0

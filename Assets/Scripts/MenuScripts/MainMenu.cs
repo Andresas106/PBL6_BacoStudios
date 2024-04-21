@@ -39,22 +39,19 @@ public class MainMenu : MonoBehaviour
     }
     public void LoadOptionsFromMenu2()
     {
-        SceneManager.LoadScene("MenuMain");
         optionsPanel.SetActive(true);
-        mainPanel.SetActive(false);
+        menu2Panel.SetActive(false);
         i = 2;
     }
     public void BackToMenuFromOptions()
     {
         if (i == 1)
         {
-            SceneManager.LoadScene("Level1_FigaFlawas");
             optionsPanel.SetActive(false);
             menu1Panel.SetActive(true);
         }
         else if (i == 2)
         {
-            SceneManager.LoadScene("Level2_TheTyets");
             optionsPanel.SetActive(false);
             menu2Panel.SetActive(true);
         }
@@ -66,23 +63,20 @@ public class MainMenu : MonoBehaviour
     }
     public void LoadColecFromMenu1()
     {
-        SceneManager.LoadScene("Level1_FigaFlawas");
-        colecPanel.SetActive(true);
         menu1Panel.SetActive(false);
+        colecPanel.SetActive(true);
         c = 1;
     }
     public void LoadColecFromMenu2()
     {
-        SceneManager.LoadScene("Level2_TheTyets");
-        colecPanel.SetActive(true);
         menu2Panel.SetActive(false);
+        colecPanel.SetActive(true);
         c = 2;
     }
     public void BackToMenuFromColec()
     {
-        if (i == 1)
+        if (c == 1)
         {
-            
             colecPanel.SetActive(false);
             menu1Panel.SetActive(true);
         }
