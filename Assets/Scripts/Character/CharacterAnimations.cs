@@ -7,11 +7,13 @@ public class CharacterAnimations : MonoBehaviour
     private InputManagement input;
 
     private Vector2 currentMovementInput;
-    private bool isJumping;
     private bool isRunning;
     private CharacterMovement playerMovement;
+    private float _groundCheckRadius = 1.0f;
 
     [SerializeField] private Animator animator;
+    [SerializeField] private LayerMask _groundMask;
+    [SerializeField] private Transform _groundCheck;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,6 @@ public class CharacterAnimations : MonoBehaviour
     {
         currentMovementInput = input.CurrentMovementInput;
         isRunning = input.isRunning;
-        isJumping = input.isJumping;
 
         if ((currentMovementInput.x != 0 || currentMovementInput.y != 0) && playerMovement.enabled)
         {
@@ -46,9 +47,15 @@ public class CharacterAnimations : MonoBehaviour
             animator.SetBool("OnRun", false);
         }
 
-        if(isJumping && playerMovement.enabled)
+        bool isGrounded = Physics.CheckSphere(_groundCheck.position, _groundCheckRadius, _groundMask);
+
+        if (!isGrounded && playerMovement.enabled)
         {
-            //animator.SetBool()
+            animator.SetBool("OnJump", true);
+        }
+        else
+        {
+            animator.SetBool("OnJump", false);
         }
     }
 }

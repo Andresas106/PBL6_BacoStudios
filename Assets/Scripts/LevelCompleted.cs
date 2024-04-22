@@ -10,6 +10,7 @@ public class LevelCompleted : MonoBehaviour
     [SerializeField] private GameObject notesobj;
     [SerializeField] private GameObject timer;
     [SerializeField] private NPCConversation myConversation;
+    [SerializeField] private GameObject entrada;
 
     private bool enter = false;
 
@@ -26,6 +27,12 @@ public class LevelCompleted : MonoBehaviour
             enter = true;
             //Hacer algo para que el jugador tenga la opcion de ir al siguiente nivel
             ConversationManager.Instance.StartConversation(myConversation);
+
         }
+    }
+
+    public void Entrada()
+    {
+        entrada.SetActive(true);
     }
 }
