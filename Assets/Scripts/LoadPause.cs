@@ -7,8 +7,10 @@ public class LoadPause : MonoBehaviour
 
     private InputManagement input;
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject optionsMenu;
+    [SerializeField] private GameObject colecMenu;
     private bool isPaused;
-    private bool pauseExecuted = false; // Variable para controlar si la pausa ya se ejecutó una vez
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,16 +22,25 @@ public class LoadPause : MonoBehaviour
     {
         isPaused = input.isPaused;
 
-        if(isPaused && !pauseMenu.activeInHierarchy)
+        if(isPaused && !pauseMenu.activeInHierarchy && !optionsMenu.activeInHierarchy && !colecMenu.activeInHierarchy)
         {
             pauseMenu.SetActive(true);
-            pauseExecuted = true;
             Time.timeScale = 0;
         }
-        else if(isPaused && pauseMenu.activeInHierarchy)
+        else if(isPaused && pauseMenu.activeInHierarchy && !optionsMenu.activeInHierarchy && !colecMenu.activeInHierarchy)
         {
             pauseMenu.SetActive(false);
             Time.timeScale = 1;
+        }
+        else if(isPaused && optionsMenu.activeInHierarchy)
+        {
+            Time.timeScale = 1;
+            optionsMenu.SetActive(false);
+        }
+        else if(isPaused && colecMenu.activeInHierarchy)
+        {
+            Time.timeScale = 1;
+            colecMenu.SetActive(false);
         }
     }
 }

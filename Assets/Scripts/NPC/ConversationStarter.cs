@@ -19,17 +19,18 @@ public class ConversationStarter : MonoBehaviour
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>();
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Entra");
         keyE.SetActive(true);
     }
 
-    void OnTriggerExit(Collider other)
+     private void OnTriggerExit(Collider other)
     {
         keyE.SetActive(false);
     }
 
-    void OnTriggerStay(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if(other.CompareTag("Player"))
         {

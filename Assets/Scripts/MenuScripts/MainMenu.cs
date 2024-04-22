@@ -15,6 +15,11 @@ public class MainMenu : MonoBehaviour
     public int i;
     public int c;
 
+    void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     public void LoadLevel1() //Cargar nivel1
     {
         SceneManager.LoadScene("Level1_FigaFlawas");

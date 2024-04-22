@@ -37,7 +37,7 @@ public class CharacterAnimations : MonoBehaviour
             animator.SetBool("OnWalk", false);
         }
 
-        if (isRunning && playerMovement.enabled)
+        if (isRunning && playerMovement.enabled && (currentMovementInput.x != 0 || currentMovementInput.y != 0))
         {
             animator.SetBool("OnRun", true);
 

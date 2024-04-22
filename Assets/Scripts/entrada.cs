@@ -1,21 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DialogueEditor;
 
 public class entrada : MonoBehaviour
 {
     [SerializeField] private GameObject TriggerCohete;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private NPCConversation myConversation;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,6 +14,7 @@ public class entrada : MonoBehaviour
         {
             gameObject.SetActive(false);
             TriggerCohete.SetActive(true);
+            ConversationManager.Instance.StartConversation(myConversation);             
         }
     }
 }

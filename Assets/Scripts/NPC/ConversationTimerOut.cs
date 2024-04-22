@@ -18,6 +18,7 @@ public class ConversationTimerOut : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Entra 2");
         keyE.SetActive(true);
     }
 
