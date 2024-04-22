@@ -5,11 +5,17 @@ using UnityEngine;
 public class ObjectInteract : MonoBehaviour
 {
     [SerializeField] private ObjectCount obj_count;
-    
 
+    private SoundManager soundManager;
+    
+    private void Awake()
+    {
+        soundManager = FindObjectOfType<SoundManager>();
+    }
     void Start()
     {
         obj_count = GameObject.FindGameObjectWithTag("Player").GetComponent<ObjectCount>();
+        
     }
 
     /// Este método se llama cuando algo colisiona con el collider del objeto
@@ -23,5 +29,6 @@ public class ObjectInteract : MonoBehaviour
 
 
         }
+            soundManager.SeleccionAudio(0, 0.5f);
     }
 }
