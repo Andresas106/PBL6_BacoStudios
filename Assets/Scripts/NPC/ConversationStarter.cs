@@ -21,13 +21,19 @@ public class ConversationStarter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entra");
-        keyE.SetActive(true);
+        if(other.CompareTag("Player"))
+        {
+            keyE.SetActive(true);
+        }
+        
     }
 
      private void OnTriggerExit(Collider other)
     {
-        keyE.SetActive(false);
+        if (other.CompareTag("Player"))
+        {
+            keyE.SetActive(false);
+        }
     }
 
     private void OnTriggerStay(Collider other)

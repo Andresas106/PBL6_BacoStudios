@@ -18,13 +18,19 @@ public class ConversationTimerOut : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entra 2");
-        keyE.SetActive(true);
+        if (other.CompareTag("Player"))
+        {
+            keyE.SetActive(true);
+        }
+            
     }
 
     void OnTriggerExit(Collider other)
     {
-        keyE.SetActive(false);
+        if (other.CompareTag("Player"))
+        {
+            keyE.SetActive(false);
+        }
     }
 
     void OnTriggerStay(Collider other)
