@@ -27,6 +27,7 @@ public class MainMenu : MonoBehaviour
 
     public void LoadLevel2() //Cargar nivel2
     {
+
         SceneManager.LoadScene("Level2_TheTyets");
     }
 
@@ -94,7 +95,7 @@ public class MainMenu : MonoBehaviour
     public void LoadMenu()
     {
         SceneManager.LoadScene("MenuMain");
-        mainPanel.SetActive(true);
+        //mainPanel.SetActive(true);
     }
 
     public void Exit()
@@ -104,11 +105,13 @@ public class MainMenu : MonoBehaviour
 
     public void closePanel1()
     {
+        Time.timeScale = 1;
         menu1Panel.SetActive(false);
     }
 
     public void closePanel2()
     {
+        Time.timeScale = 1;
         menu2Panel.SetActive(false);
     }
 }
