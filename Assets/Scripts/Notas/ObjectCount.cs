@@ -9,6 +9,7 @@ public class ObjectCount : MonoBehaviour
     [SerializeField] private TMP_Text noteText;
     [SerializeField] private GameObject notesTextobj;
     [SerializeField] private GameObject notesobj;
+    [SerializeField] private GameObject[] allNotes;
     public int quantity = 0;
 
     void Update()
@@ -30,6 +31,11 @@ public class ObjectCount : MonoBehaviour
     public void NotesAppear()
     {
         notesobj.SetActive(true);
+        for(int i=0;i<allNotes.Length;i++) 
+        {
+            allNotes[i].SetActive(true);
+        }
+
     }
 
     public void NotesDisappear()
