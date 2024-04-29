@@ -3,24 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using DialogueEditor;
+using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
     [SerializeField] private GameObject timerobj;
-    [SerializeField] private TMP_Text timertext;
+    [SerializeField] private Slider timerSlider;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private NPCConversation myConversation;
     [SerializeField] private GameObject myConversationTrigger;
     
     private float timeElapsed;
     private int minutes, seconds;
-    [SerializeField] private float time = 90;
+    [SerializeField] private float time = 300;
 
     private ObjectCount notes;
     private CharacterMovement playerMovement;
+    private bool once = true;
     // Start is called before the first frame update
     void Start()
     {
+        timerSlider.maxValue = time;
         timeElapsed = time;
         notes = GameObject.FindGameObjectWithTag("Player").GetComponent<ObjectCount>();
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>();
@@ -34,16 +37,21 @@ public class Timer : MonoBehaviour
             if (timeElapsed > 0 && notes.quantity != ObjectCount.MAX_QUANTITY && !pauseMenu.activeInHierarchy)
             {
                 timeElapsed -= Time.deltaTime;
-                minutes = (int)(timeElapsed / 60f);
-                seconds = (int)(timeElapsed - minutes * 60f);
+                //minutes = (int)(timeElapsed / 60f);
+                //seconds = (int)(timeElapsed - minutes * 60f);
 
-                timertext.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+                timerSlider.value = timeElapsed;
             }
             else if (timeElapsed <= 0)
-            {   
-                timeElapsed = time;
-                ConversationManager.Instance.StartConversation(myConversation);
-                myConversationTrigger.SetActive(true);
+            {    
+                if(once)
+                {
+                    ConversationManager.Instance.StartConversation(myConversation);
+                    myConversationTrigger.SetActive(true);
+                    once = false;
+                }
+                
+
             }
         }
            
@@ -57,6 +65,9 @@ public class Timer : MonoBehaviour
     public void TimerDisAppear()
     {
         timerobj.SetActive(false);
+        timeElapsed = time;
+        once = true;
+
     }
 
     public void NoPause()
