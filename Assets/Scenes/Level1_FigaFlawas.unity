@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 8c33cf4465a4a5946a324394c4d88ffa, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 2365e7023ddd6154f925fa47a2b5ae4a, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.12742716, g: 0.118452586, b: 0.22581261, a: 1}
+  m_IndirectSpecularColor: {r: 0.037537385, g: 0.020060144, b: 0.031064568, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4492,6 +4492,63 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &705327628
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 41.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 59.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -114.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.8907612
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.41878554
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.03558722
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.17290714
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 229.32199
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -172.824
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 154.732
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_Name
+      value: nota Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -11122,7 +11179,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 735, y: -25.3}
+  m_AnchoredPosition: {x: 735, y: -25.300049}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1275970083
@@ -15474,7 +15531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1788437850
 Transform:
   m_ObjectHideFlags: 0
@@ -18186,3 +18243,4 @@ SceneRoots:
   - {fileID: 1201352396}
   - {fileID: 972945532}
   - {fileID: 854623935}
+  - {fileID: 705327628}
