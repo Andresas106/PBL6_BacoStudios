@@ -1487,6 +1487,37 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &187620932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 187620933}
+  m_Layer: 0
+  m_Name: camera_target
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &187620933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187620932}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19, y: 2.78, z: 0.97}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 889154404}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &213052784
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6600,15 +6631,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4837887398981443335, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.1
+      value: -0.97
       objectReference: {fileID: 0}
     - target: {fileID: 4837887398981443335, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14
+      value: 15.3
       objectReference: {fileID: 0}
     - target: {fileID: 4837887398981443335, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.6
+      value: -23.67
       objectReference: {fileID: 0}
     - target: {fileID: 4837887398981443335, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7080,7 +7111,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7252236486458714997, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 187620933}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8065610505832624591, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
       insertIndex: 4
