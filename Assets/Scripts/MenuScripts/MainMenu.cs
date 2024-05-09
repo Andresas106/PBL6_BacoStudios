@@ -106,12 +106,14 @@ public class MainMenu : MonoBehaviour
     public void closePanel1()
     {
         Time.timeScale = 1;
+        AudioListener.pause = false;
         menu1Panel.SetActive(false);
     }
 
     public void closePanel2()
     {
         Time.timeScale = 1;
+        AudioListener.pause = false;
         menu2Panel.SetActive(false);
     }
 }
