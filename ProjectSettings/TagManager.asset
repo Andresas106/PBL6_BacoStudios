@@ -9,6 +9,7 @@ TagManager:
   - AreaPoint
   - Options
   - target_npc
+  - piano
   layers:
   - Default
   - TransparentFX

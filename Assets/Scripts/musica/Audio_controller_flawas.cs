@@ -1,13 +1,16 @@
 using UnityEngine;
 
-public class Audio_Controller_flawas : MonoBehaviour
+public class DualPlaylistController : MonoBehaviour
 {
-    public AudioClip[] songs; // Array de canciones
+    public AudioClip[] playlist1; // Primer array de canciones
+    public AudioClip[] playlist2; // Segundo array de canciones
+
     private AudioSource audioSource; // Referencia al AudioSource
-    private int currentSongIndex = 0; // Índice para seguir la canción actual
-    private float savedTime = 0; // Tiempo guardado para reanudar
-    private bool isPaused = false; // Estado de pausa
-    private static Audio_Controller_flawas instance; // Para evitar múltiples instancias
+    private int currentSongIndex1 = 0; // Índice de la primera lista
+    private int currentSongIndex2 = 0; // Índice de la segunda lista
+
+    private bool isUsingPlaylist1 = true; // Indicador para saber qué lista se está usando
+    private static DualPlaylistController instance; // Para evitar múltiples instancias
 
     void Awake()
     {
@@ -28,55 +31,45 @@ public class Audio_Controller_flawas : MonoBehaviour
         {
             audioSource = GetComponent<AudioSource>();
         }
-        PlaySong(currentSongIndex, savedTime); // Reproducir la canción actual
-    }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (isPaused)
-            {
-                Resume(); // Reanudar si está pausado
-            }
-            else
-            {
-                Pause(); // Pausar si no está pausado
-            }
-        }
-
-        if (!audioSource.isPlaying && !isPaused) // Si termina y no está pausado
-        {
-            PlayNextSong(); // Reproducir la siguiente canción
-        }
-    }
-
-    void PlaySong(int index, float startTime = 0)
-    {
-        if (index >= 0 && index < songs.Length) // Validar índice
-        {
-            audioSource.clip = songs[index]; // Configurar el clip
-            audioSource.time = startTime; // Configurar el tiempo de inicio
-            audioSource.Play(); // Reproducir
-        }
+        PlayNextSong(); // Iniciar con la primera canción de la lista activa
     }
 
     void PlayNextSong()
     {
-        currentSongIndex = (currentSongIndex + 1) % songs.Length;
-        PlaySong(currentSongIndex); // Reproducir la siguiente canción
+        if (isUsingPlaylist1)
+        {
+            currentSongIndex1 = (currentSongIndex1 + 1) % playlist1.Length; // Avanzar al siguiente índice
+            audioSource.clip = playlist1[currentSongIndex1]; // Configurar el nuevo clip
+        }
+        else
+        {
+            currentSongIndex2 = (currentSongIndex2 + 1) % playlist2.Length; // Avanzar al siguiente índice
+            audioSource.clip = playlist2[currentSongIndex2]; // Configurar el nuevo clip
+        }
+
+        audioSource.Play(); // Reproducir
+    }
+
+    public void SwitchPlaylist(bool usePlaylist1)
+    {
+        isUsingPlaylist1 = usePlaylist1; // Cambiar la lista de reproducción
+        PlayNextSong(); // Reproducir la siguiente canción
     }
 
     public void Pause()
     {
-        savedTime = audioSource.time; // Guardar el tiempo actual
-        audioSource.Pause(); // Pausar la música
-        isPaused = true; // Actualizar el estado de pausa
+        if (audioSource.isPlaying)
+        {
+            audioSource.Pause();
+        }
     }
 
     public void Resume()
     {
-        PlaySong(currentSongIndex, savedTime); // Reanudar desde el tiempo guardado
-        isPaused = false; // Actualizar el estado de pausa
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
     }
 }
