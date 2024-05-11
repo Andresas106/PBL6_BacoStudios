@@ -20,6 +20,7 @@ public class Timer : MonoBehaviour
     private ObjectCount notes;
     private CharacterMovement playerMovement;
     private bool once = true;
+    public float remainingTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,11 +37,13 @@ public class Timer : MonoBehaviour
         {          
             if (timeElapsed > 0 && notes.quantity != ObjectCount.MAX_QUANTITY && !pauseMenu.activeInHierarchy)
             {
+                remainingTime = timeElapsed;
                 timeElapsed -= Time.deltaTime;
                 //minutes = (int)(timeElapsed / 60f);
                 //seconds = (int)(timeElapsed - minutes * 60f);
 
                 timerSlider.value = timeElapsed;
+                
             }
             else if (timeElapsed <= 0)
             {    

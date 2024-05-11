@@ -18,6 +18,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1;
+        AudioListener.pause = false;
     }
 
     public void LoadLevel1() //Cargar nivel1

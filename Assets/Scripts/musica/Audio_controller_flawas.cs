@@ -17,7 +17,7 @@ public class DualPlaylistController : MonoBehaviour
         if (instance == null) // Asegurar solo una instancia
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject); // Mantener el objeto
+            //DontDestroyOnLoad(this.gameObject); // Mantener el objeto
         }
         else
         {
