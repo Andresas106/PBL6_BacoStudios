@@ -11,14 +11,52 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject menu2Panel;
     [SerializeField] private GameObject colecPanel;
     [SerializeField] private GameObject colec2Panel;
+    [SerializeField] private GameObject controlsPanel;
 
     public int i;
     public int c;
+    public int z;
 
     void Start()
     {
         Time.timeScale = 1;
         AudioListener.pause = false;
+    }
+
+    public void LoadControlsFromMenu()
+    {
+        controlsPanel.SetActive(true);
+        mainPanel.SetActive(false);
+    }
+    public void LoadControlsFromMenu1()
+    {
+        controlsPanel.SetActive(true);
+        menu1Panel.SetActive(false);
+        z = 1;
+    }
+    public void LoadControlsFromMenu2()
+    {
+        controlsPanel.SetActive(true);
+        menu2Panel.SetActive(false);
+        z = 2;
+    }
+    public void BackToMenuFromControls()
+    {
+        if (z == 1)
+        {
+            controlsPanel.SetActive(false);
+            menu1Panel.SetActive(true);
+        }
+        else if (z == 2)
+        {
+            controlsPanel.SetActive(false);
+            menu2Panel.SetActive(true);
+        }
+        else
+        {
+            controlsPanel.SetActive(false);
+            mainPanel.SetActive(true);
+        }
     }
 
     public void LoadLevel1() //Cargar nivel1
@@ -117,4 +155,7 @@ public class MainMenu : MonoBehaviour
         AudioListener.pause = false;
         menu2Panel.SetActive(false);
     }
+
+
+
 }
