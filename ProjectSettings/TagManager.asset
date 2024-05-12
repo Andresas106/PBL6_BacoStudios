@@ -10,6 +10,7 @@ TagManager:
   - Options
   - target_npc
   - piano
+  - Timer
   layers:
   - Default
   - TransparentFX
