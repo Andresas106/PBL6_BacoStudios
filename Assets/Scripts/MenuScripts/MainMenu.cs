@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject colecPanel;
     [SerializeField] private GameObject colec2Panel;
     [SerializeField] private GameObject controlsPanel;
+    [SerializeField] private GameObject creditsPanel;
 
     public int i;
     public int c;
@@ -23,6 +24,17 @@ public class MainMenu : MonoBehaviour
         AudioListener.pause = false;
     }
 
+    public void LoadCreditsFromMenu()
+    {
+        creditsPanel.SetActive(true);
+        mainPanel.SetActive(false);
+    }
+    
+    public void BackToMenuFromCredits()
+    {
+        creditsPanel.SetActive(false);
+        mainPanel.SetActive(true);
+    }
     public void LoadControlsFromMenu()
     {
         controlsPanel.SetActive(true);

@@ -17419,6 +17419,7 @@ MonoBehaviour:
   colecPanel: {fileID: 529580677}
   colec2Panel: {fileID: 0}
   controlsPanel: {fileID: 741709324}
+  creditsPanel: {fileID: 0}
   i: 0
   c: 0
   z: 0
