@@ -12,7 +12,9 @@ public class Timer : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private NPCConversation myConversation;
     [SerializeField] private GameObject myConversationTrigger;
-    
+    [SerializeField] private GameObject textobj;
+
+
     private float timeElapsed;
     private int minutes, seconds;
     [SerializeField] private float time = 300;
@@ -63,6 +65,8 @@ public class Timer : MonoBehaviour
     public void TimerAppear()
     {
         timerobj.SetActive(true);
+        textobj.SetActive(true);
+
     }
 
     public void TimerDisAppear()
@@ -70,6 +74,7 @@ public class Timer : MonoBehaviour
         timerobj.SetActive(false);
         timeElapsed = time;
         once = true;
+        textobj.SetActive(false);
 
     }
 

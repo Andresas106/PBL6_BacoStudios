@@ -7,6 +7,7 @@ public class StickerManage : MonoBehaviour
 
     [SerializeField] private GameObject sticker1;
     [SerializeField] private GameObject sticker2;
+    [SerializeField] private GameObject obj_sticker1;
 
     // Update is called once per frame
     void Update()
@@ -17,10 +18,12 @@ public class StickerManage : MonoBehaviour
             if(code == 1)
             {
                 sticker1.SetActive(true);
+                obj_sticker1.SetActive(true);
             }
             else
             {
                 sticker1.SetActive(false);
+                obj_sticker1.SetActive(false);
             }
         }
 
