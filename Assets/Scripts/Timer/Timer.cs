@@ -13,6 +13,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private NPCConversation myConversation;
     [SerializeField] private GameObject myConversationTrigger;
     [SerializeField] private GameObject textobj;
+    [SerializeField] private AudioSource NPCAudio;
 
 
     private float timeElapsed;
@@ -20,16 +21,15 @@ public class Timer : MonoBehaviour
     [SerializeField] private float time = 300;
 
     private ObjectCount notes;
-    private CharacterMovement playerMovement;
     private bool once = true;
     public float remainingTime;
+    public bool conversationTrigger;
     // Start is called before the first frame update
     void Start()
     {
         timerSlider.maxValue = time;
         timeElapsed = time;
         notes = GameObject.FindGameObjectWithTag("Player").GetComponent<ObjectCount>();
-        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>();
     }
 
     // Update is called once per frame
@@ -41,8 +41,6 @@ public class Timer : MonoBehaviour
             {
                 remainingTime = timeElapsed;
                 timeElapsed -= Time.deltaTime;
-                //minutes = (int)(timeElapsed / 60f);
-                //seconds = (int)(timeElapsed - minutes * 60f);
 
                 timerSlider.value = timeElapsed;
                 
@@ -80,11 +78,16 @@ public class Timer : MonoBehaviour
 
     public void NoPause()
     {
-        playerMovement.enabled = true;
+        conversationTrigger = false;
     }
 
     public void Pause()
     {
-        playerMovement.enabled = false;
+        conversationTrigger = true;
+    }
+
+    public void StopAudio()
+    {
+        NPCAudio.Stop();
     }
 }

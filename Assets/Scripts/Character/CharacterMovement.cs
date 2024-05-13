@@ -20,6 +20,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private LayerMask _groundMask;
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private float JumpForce;
+    [SerializeField] private Timer timer;
 
     // Start is called before the first frame update
     void Start()
@@ -32,14 +33,19 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        handleMovement();
-        handleRotation();
-        handleJump();
+        if (!timer.conversationTrigger)
+        {
+            handleMovement();
+            handleRotation();
+            handleJump();
+        }
+        
     }
 
 
     void handleMovement()
     {
+        
         currentMovementInput = input.CurrentMovementInput;
         isRunning = input.isRunning;
 

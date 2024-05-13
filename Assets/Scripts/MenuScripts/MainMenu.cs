@@ -156,6 +156,7 @@ public class MainMenu : MonoBehaviour
 
     public void closePanel1()
     {
+        Debug.Log("cerrar");
         Time.timeScale = 1;
         AudioListener.pause = false;
         menu1Panel.SetActive(false);
