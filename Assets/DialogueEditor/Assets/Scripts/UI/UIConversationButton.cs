@@ -26,6 +26,7 @@ namespace DialogueEditor
         // UI Elements
         [SerializeField] private TMPro.TextMeshProUGUI TextMesh = null;
         [SerializeField] private Image OptionBackgroundImage = null;
+        [SerializeField] private Button OptionButton = null;
         private RectTransform m_rect;
 
         // Node data
@@ -50,7 +51,9 @@ namespace DialogueEditor
 
         private void Update()
         {
-            if (Hovering)
+            m_rect.sizeDelta = new Vector2(300, 75);
+            OptionButton.transition = Selectable.Transition.None;
+            /*if (Hovering)
             {
                 m_hoverT += Time.deltaTime;
                 float normalised = m_hoverT / 0.2f;
@@ -80,7 +83,7 @@ namespace DialogueEditor
                 {
                     m_hoverState = (m_hoverState == eHoverState.animatingOn) ? eHoverState.idleOn : eHoverState.idleOff;
                 }
-            }
+            }*/
         }
 
 
