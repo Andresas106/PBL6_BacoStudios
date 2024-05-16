@@ -16,7 +16,7 @@ public class CharacterMovement : MonoBehaviour
     private bool isRunning;
     private float _groundCheckRadius = 1.0f;
 
-    [SerializeField] private float movementSpeed = 3.0f;
+    [SerializeField] private float movementSpeed = 10f;
     [SerializeField] private LayerMask _groundMask;
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private float JumpForce;
