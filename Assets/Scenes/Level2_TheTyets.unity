@@ -7061,6 +7061,7 @@ GameObject:
   - component: {fileID: 493291868}
   - component: {fileID: 493291867}
   - component: {fileID: 493291866}
+  - component: {fileID: 493291869}
   m_Layer: 3
   m_Name: flotador_gigante
   m_TagString: Untagged
@@ -7076,13 +7077,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493291864}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.64221835, y: 0.29589793, z: -0.29589793, w: 0.64221835}
-  m_LocalPosition: {x: 13.7173195, y: 22.48986, z: 7.2531967}
-  m_LocalScale: {x: 132.29138, y: 132.29138, z: 132.29138}
+  m_LocalRotation: {x: 0.1813903, y: 0.26206568, z: -0.10577129, w: 0.9419298}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1462713348}
-  m_Father: {fileID: 853497034}
+  m_Father: {fileID: 1885001917}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &493291866
 MeshCollider:
@@ -7156,6 +7157,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493291864}
   m_Mesh: {fileID: 8570932587140677213, guid: cd545c1fb979b0946ac9755c46659f65, type: 3}
+--- !u!114 &493291869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493291864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5450cc41a0c3a941a1012093da3f9a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!4 &534525937 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
@@ -8997,7 +9011,7 @@ PrefabInstance:
       addedObject: {fileID: 1903831164}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 25b6093af226785439a3730feed550f7, type: 3}
       insertIndex: 43
-      addedObject: {fileID: 493291865}
+      addedObject: {fileID: 1885001917}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 25b6093af226785439a3730feed550f7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1822327936}
@@ -19477,6 +19491,52 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 730063428}
   m_SourcePrefab: {fileID: 100100000, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+--- !u!1 &1885001916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1885001917}
+  - component: {fileID: 1885001918}
+  m_Layer: 3
+  m_Name: Pivot_flotador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1885001917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885001916}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.76766396, y: 0.23201308, z: 0.011189652, w: 0.59727454}
+  m_LocalPosition: {x: 13.7173195, y: 22.48985, z: 7.2532234}
+  m_LocalScale: {x: 132.29138, y: 132.29135, z: 132.29137}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 493291865}
+  m_Father: {fileID: 853497034}
+  m_LocalEulerAnglesHint: {x: -112.749, y: -42.24298, z: 62.448997}
+--- !u!114 &1885001918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885001916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5450cc41a0c3a941a1012093da3f9a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotation: {x: 0, y: 0, z: 10}
 --- !u!1 &1900345660
 GameObject:
   m_ObjectHideFlags: 0
