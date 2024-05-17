@@ -169,9 +169,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 19
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":77.89996,\"yPos\":327.599976},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Acabar\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":93.8999939,\"yPos\":163.999985},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Molt
-    b\xE9!!!!!! Has trobat la entrada. Ara ja pots tornar a la nau per procedir amb
-    el teu viatge.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":2,\"Volume\":0.5}]}"
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":173.399963,"yPos":185.599991},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":true,"xPos":179,"yPos":35.6000061},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Genial!
+    Has trobat l''entrada. Ara ja pots tornar a la nau per procedir amb el teu viatge.","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":2,"Volume":0.5}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -183,7 +182,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1294759382}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: NoPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &20880088
 GameObject:
   m_ObjectHideFlags: 0
@@ -22065,12 +22076,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 19
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":23.8999634,\"yPos\":293.600037},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Acabar\",\"parentUIDs\":[17],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":282.9,\"yPos\":100.000015},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mare
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-76.8001556,\"yPos\":223.599976},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[17],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":189.4,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mare
     meva!! Aix\xF2 s\xED que \xE9s velocitat, noi!!! Com pots veure has aconseguit
-    que el planeta s'il\xB7lumini.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":296.9,\"yPos\":275.600037},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ara
-    ja pots buscar el tros d'entrada amb tranquil\xB7litat pel planeta i el seu sat\xE8l\xB7lit
-    , per\xF2 tampoc amb molta que d'aqu\xED poc \xE9s el Canet Rock i suposo que
-    haur\xE0s de passar per la resta de planetes de la gal\xE0xia Kanet.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.5}]}"
+    que el planeta s'il\xB7lumina.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":203.4,\"yPos\":197.599976},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ara
+    ja pots buscar el tros d'entrada amb tranquil\xB7litat, per\xF2 tampoc amb molta
+    que dintre de res \xE9s el Canet Rock i suposo que haur\xE0s de passar per la
+    resta de planetes de la gal\xE0xia Kanet.\\r\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.5}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -22083,31 +22094,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1294759382}
-        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
-        m_MethodName: NoPause
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1479734760}
-        m_TargetAssemblyTypeName: LevelCompleted, Assembly-CSharp
-        m_MethodName: Entrada
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1038959080
 GameObject:
   m_ObjectHideFlags: 0
@@ -22789,20 +22776,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 25
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":860.8003,\"yPos\":582.1997},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Acabar\",\"parentUIDs\":[13],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":723.099854,\"yPos\":33.9999847},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1018.90051,\"yPos\":198.999863},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Continuar\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":519.9,\"yPos\":201.999832},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Continuar\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":396.900055,\"yPos\":516.999146},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Continuar\",\"parentUIDs\":[9],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":874.9005,\"yPos\":366.9988},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Continuar\",\"parentUIDs\":[11],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":306.400055,\"yPos\":288.599976},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[7],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":330.400024,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh!
-    Que estrany trobar alg\xFA per aqu\xED durant aquests dies. Em sap greu dir-te
-    que els FigaFlawas no hi s\xF3n aqu\xED en aquest moment.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1018.40051,\"yPos\":17.8002319},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Com
-    ja sabr\xE0s aquest \xE9s el seu planeta per\xF2 ara mateix estan preparant-se
-    per al Canet Rock a la Terra...\\n\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":737.7999,\"yPos\":184.200546},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Com
-    com??!! Que has perdut l'entrada per al Festival???!!! Per\xF2 com pot ser aix\xF2!!!\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":302.800049,\"yPos\":187.200516},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Per
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":666.200439,\"yPos\":660.598633},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[13],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":528.5001,\"yPos\":112.399979},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":824.3002,\"yPos\":277.399841},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":325.300018,\"yPos\":280.3998},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":265.5001,\"yPos\":556.1982},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[9],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":680.300659,\"yPos\":445.398376},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[11],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":111.800079,\"yPos\":366.999542},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[7],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":134.200012,\"yPos\":101.2},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ostres!!
+    Que estrany trobar-se ning\xFA per aqu\xED aquests dies!! Com ja deus saber aquest
+    \xE9s el planeta dels FigaFlawas, ...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":823.8002,\"yPos\":96.2002258},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...
+    per\xF2 em sap greu dir-te que ara mateix no hi s\xF3n aqu\xED perqu\xE8 s'estan
+    preparant per al festival Canet Rock a la Terra\\n\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":543.2002,\"yPos\":262.600555},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Com!?
+    Que has perdut la entrada al festival!? Com pot ser aix\xF2!?\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":108.200043,\"yPos\":265.6005},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Per
     sort tens al teu davant al guardi\xE0 del planeta FigaFlawas, ning\xFA el coneix
-    com jo i et penso ajudar a trobar el tros d'entrada que s'amaga aqu\xED.\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":314.200073,\"yPos\":376.198639},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Per\xF2
-    per fer-ho has d'activar el planeta. Ara mateix es troba apagat donat que no
-    sent la m\xFAsica dels seus propietaris.\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":606.400146,\"yPos\":363.1992},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"El
-    teu objectiu es recollir les notes de la can\xE7\xF3 en menys de 5 minuts i fer
-    sonar la melodia. Si ho aconsegueixes, el planeta recuperar\xE0 la seva llum
-    y podr\xE0s buscar el tro\xE7 de l\u2019entrada.\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":865.4005,\"yPos\":458.199371},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Molta
-    Sort!!\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.5}]}"
+    com jo, i et penso ajudar a trobar el tros d'entrada que s'amaga al planeta.\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":119.600067,\"yPos\":454.598267},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Per
+    fer-ho has d'activar el planeta. Ara mateix es troba apagat donat que no sent
+    la m\xFAsica dels seus propietaris.\\r\\n\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":411.80014,\"yPos\":441.598755},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"El
+    teu objectiu \xE9s recollir les notes de la can\xE7\xF3 en menys de 5 minuts
+    i fer sonar la melodia. Si ho aconsegueixes, el planeta recuperar\xE0 la seva
+    llum i podr\xE0s buscar el tros de l'entrada.\\n\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":670.800659,\"yPos\":536.599},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Si
+    ho pots fer en menys de la meitat de temps, a m\xE9s, rebr\xE0s un premi!!\\r\\nMolta
+    Sort!!\\r\\n\\r\\n\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.5}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -30705,7 +30693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 17
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":519.5999,\"yPos\":34.00003},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Acabar\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":228.6,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Un
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":480.3999,\"yPos\":34.00003},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":189.4,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Un
     cop m\xE9s. Has de recollir totes les notes en menys de 5 minuts. Bona sort!!!!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":5,\"Volume\":0.5}]}"
   saveVersion: 110
   DefaultName: 
@@ -30718,7 +30706,55 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1294759382}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: TimerAppear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 102868655}
+        m_TargetAssemblyTypeName: ObjectCount, Assembly-CSharp
+        m_MethodName: NotesAppear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 102868655}
+        m_TargetAssemblyTypeName: ObjectCount, Assembly-CSharp
+        m_MethodName: NotesTextAppear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1294759382}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: NoPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!136 &1563444262
 CapsuleCollider:
   m_ObjectHideFlags: 0
