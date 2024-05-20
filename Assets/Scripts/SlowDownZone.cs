@@ -6,10 +6,12 @@ public class SlowDownZone : MonoBehaviour
 {
     public bool IsOnPiano = false;
     [SerializeField] private float movementSpeed = 10f;
+    [SerializeField] private Transform player;
 
     private Vector2 currentMovementInput;
     private bool isRunning;
     private InputManagement input;
+
 
 
     void Start()
@@ -33,7 +35,6 @@ public class SlowDownZone : MonoBehaviour
             // Reducimos la velocidad del objeto
             controlRun(rb);
         }
-        Debug.Log("He entrado");
     }
 
     // Cuando un objeto sale de la zona de desaceleración
@@ -44,14 +45,12 @@ public class SlowDownZone : MonoBehaviour
 
     private void controlRun(Rigidbody rb)
     {
-
-
         currentMovementInput = input.CurrentMovementInput;
         isRunning = input.isRunning;
 
         Vector3 _moveDirection = new Vector3(currentMovementInput.x, 0.0f, currentMovementInput.y);
 
-        Vector3 direction = transform.forward * _moveDirection.z;
+        Vector3 direction = player.forward * _moveDirection.z;
 
         if (isRunning && IsOnPiano)
         {

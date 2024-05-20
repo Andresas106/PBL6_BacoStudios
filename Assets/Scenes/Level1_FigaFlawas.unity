@@ -20559,13 +20559,13 @@ PrefabInstance:
       addedObject: {fileID: 1389449434}
     - targetCorrespondingSourceObject: {fileID: 2294639978672069109, guid: 296305c78f59d5942a37a6d0aa66602a, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1389449435}
+    - targetCorrespondingSourceObject: {fileID: 2294639978672069109, guid: 296305c78f59d5942a37a6d0aa66602a, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1389449429}
     - targetCorrespondingSourceObject: {fileID: 2294639978672069109, guid: 296305c78f59d5942a37a6d0aa66602a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1389449425}
-    - targetCorrespondingSourceObject: {fileID: 2294639978672069109, guid: 296305c78f59d5942a37a6d0aa66602a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1389449435}
     - targetCorrespondingSourceObject: {fileID: 6507901977716847365, guid: 296305c78f59d5942a37a6d0aa66602a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 867318206}
@@ -30440,7 +30440,7 @@ MeshCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
-  m_ProvidesContacts: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
   m_Convex: 1
@@ -30474,6 +30474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   movementSpeed: 10
+  player: {fileID: 889154404}
 --- !u!114 &1389449435
 MonoBehaviour:
   m_ObjectHideFlags: 0
