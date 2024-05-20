@@ -14,6 +14,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private GameObject myConversationTrigger;
     [SerializeField] private GameObject textobj;
     [SerializeField] private AudioSource NPCAudio;
+    [SerializeField] private GameObject texto_habitant;
 
 
     private float timeElapsed;
@@ -30,11 +31,13 @@ public class Timer : MonoBehaviour
         timerSlider.maxValue = time;
         timeElapsed = time;
         notes = GameObject.FindGameObjectWithTag("Player").GetComponent<ObjectCount>();
+        
     }
 
     // Update is called once per frame
     private void Update()
     {
+        
         if(timerobj.activeInHierarchy)
         {          
             if (timeElapsed > 0 && notes.quantity != ObjectCount.MAX_QUANTITY && !pauseMenu.activeInHierarchy)
@@ -64,6 +67,7 @@ public class Timer : MonoBehaviour
     {
         timerobj.SetActive(true);
         textobj.SetActive(true);
+        texto_habitant.SetActive(false);
 
     }
 

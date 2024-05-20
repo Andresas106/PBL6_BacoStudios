@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject controlsPanel;
     [SerializeField] private GameObject creditsPanel;
     [SerializeField] private GameObject controlsPopPanel;
+    [SerializeField] private GameObject texto_habitant;
 
     public int i;
     public int c;
@@ -30,6 +31,7 @@ public class MainMenu : MonoBehaviour
         Time.timeScale = 1;
         AudioListener.pause = false;
         controlsPopPanel.SetActive(false);
+        texto_habitant.SetActive(true);
     }
 
     public void LoadCreditsFromMenu()

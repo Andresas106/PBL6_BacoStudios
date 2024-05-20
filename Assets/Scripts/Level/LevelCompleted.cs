@@ -11,6 +11,7 @@ public class LevelCompleted : MonoBehaviour
     [SerializeField] private NPCConversation myConversation;
     [SerializeField] private GameObject entrada;
     [SerializeField] private GameObject stickerText;
+    [SerializeField] private GameObject texto_entrada;
 
 
 
@@ -63,6 +64,7 @@ public class LevelCompleted : MonoBehaviour
     public void ActivarEntrada()
     {
         entrada.SetActive(true);
+        texto_entrada.SetActive(true);
 
         // Cambia a la segunda lista cuando se activa la entrada
         if (playlistController != null)
