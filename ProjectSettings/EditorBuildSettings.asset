@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1_FigaFlawas.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Level2_TheTyets.unity
     guid: 67530825eec062241ac582d3566434f4
+  - enabled: 1
+    path: Assets/Scenes/Video_Intro.unity
+    guid: ae52a8c52be36ec41bf0ab853f22a0d7
   - enabled: 0
     path: Assets/Scenes/MenuPlanet1.unity
     guid: d99e6e9c759f79848898a0987c5c1c0e

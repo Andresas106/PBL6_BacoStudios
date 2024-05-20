@@ -16,6 +16,7 @@ public class CharacterMovement : MonoBehaviour
     private bool isRunning;
     private float _groundCheckRadius = 1.0f;
 
+    [SerializeField] SlowDownZone sdw;
     [SerializeField] private float movementSpeed = 10f;
     [SerializeField] private LayerMask _groundMask;
     [SerializeField] private Transform _groundCheck;
@@ -61,18 +62,15 @@ public class CharacterMovement : MonoBehaviour
         // Calcular la direcci�n del movimiento
         Vector3 _moveDirection = new Vector3(currentMovementInput.x, 0.0f, currentMovementInput.y);
 
-        
-
-
         Vector3 direction = transform.forward * _moveDirection.z;
 
         //Vector3 velocity = direction * movementSpeed;
        
-        if (isRunning)
+        if (isRunning && !sdw.IsOnPiano)
         {
              _rb.MovePosition(_rb.position + direction * (movementSpeed * 2 * Time.fixedDeltaTime));
         }
-        else
+        else if(!isRunning && !sdw.IsOnPiano)
         {
             _rb.MovePosition(_rb.position + direction * (movementSpeed * Time.fixedDeltaTime));
         }

@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject colec2Panel;
     [SerializeField] private GameObject controlsPanel;
     [SerializeField] private GameObject creditsPanel;
+    [SerializeField] private GameObject controlsPopPanel;
 
     public int i;
     public int c;
@@ -20,8 +21,15 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
+        controlsPopPanel.SetActive(true);
+    }
+
+    public void StartGameFromPopUp()
+    {
+        controlsPopPanel.SetActive(false);
         Time.timeScale = 1;
         AudioListener.pause = false;
+        controlsPopPanel.SetActive(false);
     }
 
     public void LoadCreditsFromMenu()
@@ -71,9 +79,21 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    public void LoadLevel1() //Cargar nivel1
+    /*public void LoadLevel1() //Cargar nivel1
     {
+        StartCoroutine(WaitVideo());
+        
+    }
+
+    IEnumerator WaitVideo()
+    {
+        yield return new WaitForSeconds(65);
         SceneManager.LoadScene("Level1_FigaFlawas");
+    }*/
+
+    public void LoadAnim() //Cargar nivel1
+    {
+        SceneManager.LoadScene("Video_Intro");
     }
 
     public void LoadLevel2() //Cargar nivel2
