@@ -7,6 +7,8 @@ public class entrada : MonoBehaviour
 {
     [SerializeField] private GameObject TriggerCohete;
     [SerializeField] private NPCConversation myConversation;
+    [SerializeField] private GameObject text_nave;
+    [SerializeField] private GameObject text_entrada;
 
     private SoundManager soundManager;
 
@@ -17,6 +19,8 @@ public class entrada : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        text_nave.SetActive(true);
+        text_entrada.SetActive(false);
         if (other.tag == "Player")
         {
             gameObject.SetActive(false);

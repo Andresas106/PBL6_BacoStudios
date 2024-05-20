@@ -28334,6 +28334,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TriggerCohete: {fileID: 1369912423}
   myConversation: {fileID: 428964}
+  text_nave: {fileID: 196469476}
+  text_entrada: {fileID: 153357958}
 --- !u!135 &1159840955
 SphereCollider:
   m_ObjectHideFlags: 0
