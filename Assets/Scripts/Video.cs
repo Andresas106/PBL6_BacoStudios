@@ -5,8 +5,7 @@ using UnityEngine.Video;
 
 public class Video : MonoBehaviour
 {
-    public VideoPlayer videoPlayer; // Asigna el VideoPlayer en el Inspector
-    public string Level1_FigaFlawas; // Nombre de la escena a cargar
+    private VideoPlayer videoPlayer; // Asigna el VideoPlayer en el Inspector
 
     void Start()
     {
@@ -28,7 +27,18 @@ public class Video : MonoBehaviour
 
     void OnVideoEnd(VideoPlayer vp)
     {
-        // Cambiar de escena al terminar el video
-        SceneManager.LoadScene("Level1_FigaFlawas");
+        Scene scene = SceneManager.GetActiveScene();
+        if(scene.name == "Video_Intro")
+        {
+            // Cambiar de escena al terminar el video
+            SceneManager.LoadScene("Level1_FigaFlawas");
+        }
+        else if(scene.name == "Video_despedida1")
+        {
+            // Cambiar de escena al terminar el video
+            SceneManager.LoadScene("Level2_TheTyets");
+        }
+        
+
     }
 }

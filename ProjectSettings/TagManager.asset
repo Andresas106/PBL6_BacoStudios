@@ -11,6 +11,7 @@ TagManager:
   - target_npc
   - piano
   - Timer
+  - water
   layers:
   - Default
   - TransparentFX

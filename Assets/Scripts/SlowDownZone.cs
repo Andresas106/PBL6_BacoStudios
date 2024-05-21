@@ -5,6 +5,7 @@ using UnityEngine;
 public class SlowDownZone : MonoBehaviour
 {
     public bool IsOnPiano = false;
+    public bool IsOnWater = false;
     [SerializeField] private float movementSpeed = 10f;
     [SerializeField] private Transform player;
 
@@ -22,7 +23,8 @@ public class SlowDownZone : MonoBehaviour
     // Cuando un objeto entra en la zona de desaceleración
     private void OnTriggerEnter(Collider other)
     {
-        IsOnPiano = true;
+        if(gameObject.tag == "piano") IsOnPiano = true;
+        if(gameObject.tag == "water") IsOnWater = true;
         
     }
 
@@ -40,7 +42,8 @@ public class SlowDownZone : MonoBehaviour
     // Cuando un objeto sale de la zona de desaceleración
     private void OnTriggerExit(Collider other)
     {
-        IsOnPiano = false;
+        if (gameObject.tag == "piano") IsOnPiano = false;
+        if (gameObject.tag == "water") IsOnWater = false;
     }
 
     private void controlRun(Rigidbody rb)
@@ -59,6 +62,15 @@ public class SlowDownZone : MonoBehaviour
         else if(!isRunning && IsOnPiano)
         {
             rb.MovePosition(rb.position + direction * (movementSpeed * 2 * Time.deltaTime));
+        }
+
+        if (isRunning && IsOnWater)
+        {
+            rb.MovePosition(rb.position + direction * (movementSpeed * Time.deltaTime));
+        }
+        else if (!isRunning && IsOnWater)
+        {
+            rb.MovePosition(rb.position + direction * (movementSpeed / 2 * Time.deltaTime));
         }
     }
 

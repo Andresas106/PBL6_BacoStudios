@@ -16,7 +16,7 @@ public class LevelChanger : MonoBehaviour
     {
         fade.FadeIN();
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene("MenuMain");
+        SceneManager.LoadScene("Video_despedida1");
     }
 
     private void OnTriggerEnter(Collider other)
