@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0.82
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 2365e7023ddd6154f925fa47a2b5ae4a, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 42a2c5c8f907e954dbaf410e493b61fc, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.573
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.021508921, g: 0.011494462, b: 0.017799998, a: 0.573}
+  m_IndirectSpecularColor: {r: 0.00767977, g: 0.030246733, b: 0.032404568, a: 0.573}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -28925,7 +28925,7 @@ Transform:
   m_GameObject: {fileID: 956769903}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.65, y: -54.66, z: -10.11}
+  m_LocalPosition: {x: 14.71, y: -52.86, z: -11.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28943,8 +28943,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9213084, g: 0.1319402, b: 0.98490566, a: 1}
-  m_Intensity: 9.09
-  m_Range: 6.0407753
+  m_Intensity: 39.6
+  m_Range: 24.78
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
