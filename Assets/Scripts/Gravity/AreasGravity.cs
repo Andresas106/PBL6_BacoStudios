@@ -11,7 +11,6 @@ public class AreasGravity : MonoBehaviour
     void Start()
     {
         transform.GetComponent<Collider>().isTrigger = true;
-
     }
 
     public Vector3 GetGravity(GravityPlayer gravityPlayer)

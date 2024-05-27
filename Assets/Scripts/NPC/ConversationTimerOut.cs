@@ -10,6 +10,8 @@ public class ConversationTimerOut : MonoBehaviour
     [SerializeField] private NPCConversation myConversation;
     [SerializeField] private GameObject myTrigger;
     [SerializeField] private GameObject keyE;
+
+    private bool once = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,7 @@ public class ConversationTimerOut : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             keyE.SetActive(true);
+            once = true;
         }
             
     }
@@ -37,10 +40,11 @@ public class ConversationTimerOut : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (input.isInteracting)
+            if (input.isInteracting && once)
             {
                 keyE.SetActive(false);
                 ConversationManager.Instance.StartConversation(myConversation);
+                once = false;
             }
         }
     }

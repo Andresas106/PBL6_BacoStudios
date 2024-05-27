@@ -16,12 +16,12 @@ public class CharacterMovement : MonoBehaviour
     private bool isRunning;
     private float _groundCheckRadius = 1.0f;
 
-    [SerializeField] SlowDownZone sdw = null;
     [SerializeField] private float movementSpeed = 10f;
     [SerializeField] private LayerMask _groundMask;
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private float JumpForce;
     [SerializeField] private Timer timer;
+
 
     // Start is called before the first frame update
     void Start()
@@ -65,19 +65,16 @@ public class CharacterMovement : MonoBehaviour
         Vector3 direction = transform.forward * _moveDirection.z;
 
         //Vector3 velocity = direction * movementSpeed;
-       
-        if (isRunning && !sdw.IsOnPiano && !sdw.IsOnWater)
+
+
+        if (isRunning)
         {
              _rb.MovePosition(_rb.position + direction * (movementSpeed * 2 * Time.fixedDeltaTime));
         }
-        else if(!isRunning && !sdw.IsOnPiano && !sdw.IsOnWater)
+        else if(!isRunning)
         {
             _rb.MovePosition(_rb.position + direction * (movementSpeed * Time.fixedDeltaTime));
         }
-
-
-
-
     }
 
     void handleRotation()

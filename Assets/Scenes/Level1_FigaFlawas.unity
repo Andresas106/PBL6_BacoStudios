@@ -237,7 +237,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.06797219, y: 0.008650329, z: 0.04245241}
+  m_Size: {x: 0.06797219, y: 0.02, z: 0.04245241}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &15463697
 MonoBehaviour:
@@ -1057,6 +1057,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 0308c919b8253874d935d7fa700d0505, type: 3}
@@ -1371,7 +1375,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.06797219, y: 0.008650329, z: 0.04245241}
+  m_Size: {x: 0.06797219, y: 0.02, z: 0.04245241}
   m_Center: {x: -0.017370196, y: -0.025200527, z: -0.039913896}
 --- !u!114 &93493703
 MonoBehaviour:
@@ -7043,7 +7047,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.029122256, y: 0.0113378335, z: 0.08247204}
+  m_Size: {x: 0.029122256, y: 0.02, z: 0.08247204}
   m_Center: {x: -0.01998949, y: 0.003157892, z: 0.006919135}
 --- !u!114 &226273463
 MonoBehaviour:
@@ -7117,7 +7121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 17
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":311.299652,"yPos":202.600037},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":true,"xPos":51.5,"yPos":191},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"S''ha
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":264.299652,"yPos":169.600037},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":true,"xPos":4.5,"yPos":158},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"S''ha
     acabat el temps. Si ho vols tornar a intentar, torna a parlar amb mi.","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":5,"Volume":0.5}]}'
   saveVersion: 110
   DefaultName: 
@@ -7130,7 +7134,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1294759382}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: NoPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &230272766
 Transform:
   m_ObjectHideFlags: 0
@@ -7317,6 +7333,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
       propertyPath: m_Name
       value: nota (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -7655,7 +7675,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.067972206, y: 0.008650329, z: 0.04813363}
+  m_Size: {x: 0.067972206, y: 0.02, z: 0.04813363}
   m_Center: {x: -0.018637344, y: -0.022922013, z: -0.036871165}
 --- !u!114 &265963017
 MonoBehaviour:
@@ -7891,7 +7911,7 @@ RectTransform:
   m_GameObject: {fileID: 278121854}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.84974, y: 0.84974, z: 0.84974}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 304740043}
@@ -7899,7 +7919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3165.5, y: 0.10626221}
+  m_AnchoredPosition: {x: -2629, y: -20}
   m_SizeDelta: {x: -4887, y: -0.21252441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &281068434
@@ -8266,7 +8286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: 0}
+  m_AnchoredPosition: {x: 13, y: -0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304740044
@@ -8361,7 +8381,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.042248037, y: 0.0042155306, z: 0.15537503}
+  m_Size: {x: 0.042248037, y: 0.02, z: 0.15537503}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &308292409
 MonoBehaviour:
@@ -13310,7 +13330,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0486419, y: 0.008650329, z: 0.042452414}
+  m_Size: {x: 0.0486419, y: 0.02, z: 0.042452414}
   m_Center: {x: -0.015915183, y: 0.00070084044, z: -0.0008862899}
 --- !u!114 &354457752
 MonoBehaviour:
@@ -14242,6 +14262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 0308c919b8253874d935d7fa700d0505, type: 3}
@@ -14862,7 +14886,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.042248055, y: 0.0042155306, z: 0.16649103}
+  m_Size: {x: 0.042248055, y: 0.02, z: 0.16649103}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &492855906
 MonoBehaviour:
@@ -17008,7 +17032,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.059231315, y: 0.0036637383, z: 0.13299721}
+  m_Size: {x: 0.059231315, y: 0.02, z: 0.13299721}
   m_Center: {x: -0.21923019, y: -0.033014473, z: -0.11493455}
 --- !u!114 &658305148
 MonoBehaviour:
@@ -17164,7 +17188,7 @@ RectTransform:
   m_GameObject: {fileID: 686055135}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7259, y: 0.7259, z: 0.7259}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 653866487}
@@ -17172,7 +17196,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2330.5, y: -307.89374}
+  m_AnchoredPosition: {x: -1864, y: -307.89}
   m_SizeDelta: {x: -4887, y: -0.21252441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &688482153
@@ -17332,6 +17356,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
       propertyPath: m_Name
       value: nota (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -18472,7 +18500,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0486419, y: 0.008650329, z: 0.042452414}
+  m_Size: {x: 0.0486419, y: 0.02, z: 0.042452414}
   m_Center: {x: -0.015915183, y: 0.00070084044, z: -0.0008862899}
 --- !u!114 &747138005
 MonoBehaviour:
@@ -19410,7 +19438,7 @@ PrefabInstance:
       objectReference: {fileID: 1275970081}
     - target: {fileID: 4738399984169705847, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
       propertyPath: allNotes.Array.size
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4738399984169705847, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
       propertyPath: allNotes.Array.data[0]
@@ -19464,6 +19492,10 @@ PrefabInstance:
       propertyPath: allNotes.Array.data[12]
       value: 
       objectReference: {fileID: 1934819770}
+    - target: {fileID: 4738399984169705847, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
+      propertyPath: allNotes.Array.data[13]
+      value: 
+      objectReference: {fileID: 72456548}
     - target: {fileID: 4808136326131698794, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.81050426
@@ -20414,7 +20446,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.017320985, y: 0.015157125, z: 0.13179839}
+  m_Size: {x: 0.017320985, y: 0.02, z: 0.13179839}
   m_Center: {x: -0.25761104, y: -0.0073425206, z: -0.112092815}
 --- !u!114 &791635283
 MonoBehaviour:
@@ -22324,7 +22356,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0486419, y: 0.008650329, z: 0.042452414}
+  m_Size: {x: 0.0486419, y: 0.02, z: 0.042452414}
   m_Center: {x: -0.015915183, y: 0.00070084044, z: -0.0008862899}
 --- !u!114 &856182509
 MonoBehaviour:
@@ -28758,7 +28790,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.018162733, y: 0.01515713, z: 0.13179842}
+  m_Size: {x: 0.018162733, y: 0.02, z: 0.13179842}
   m_Center: {x: -0.25819993, y: -0.007685541, z: -0.11286943}
 --- !u!114 &936345831
 MonoBehaviour:
@@ -29122,7 +29154,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.04357021, y: 0.0036716429, z: 0.13129544}
+  m_Size: {x: 0.04357021, y: 0.02, z: 0.13129544}
   m_Center: {x: -0.011577231, y: 0.0030327253, z: 0.0060572065}
 --- !u!114 &996352445
 MonoBehaviour:
@@ -29706,7 +29738,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.033922106, y: 0.0042155315, z: 0.21015243}
+  m_Size: {x: 0.033922106, y: 0.02, z: 0.21015243}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1059913403
 MonoBehaviour:
@@ -30176,19 +30208,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 25
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":705.700439,\"yPos\":577.3979},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[13],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":468.799835,\"yPos\":37.99991},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":850.1999,\"yPos\":206.199738},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":355.999969,\"yPos\":201.199646},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":298.6,\"yPos\":476.997131},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[9],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":713.4007,\"yPos\":366.19754},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[11],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":144.900024,\"yPos\":287.79834},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[7],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":190.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ostres!!
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":288.700439,\"yPos\":601.3979},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[13],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":49.7998352,\"yPos\":61.99991},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":431.1999,\"yPos\":230.199738},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-63.00003,\"yPos\":225.199646},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-120.399994,\"yPos\":500.997131},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[9],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":294.4007,\"yPos\":390.19754},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[11],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-274.099976,\"yPos\":311.79834},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[7],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-228.5,\"yPos\":46},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ostres!!
     Que estrany trobar-se ning\xFA per aqu\xED aquests dies!! Com ja deus saber aquest
-    \xE9s el planeta dels FigaFlawas, ...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":848.899963,\"yPos\":22.60022},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...
+    \xE9s el planeta dels FigaFlawas, ...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":429.899963,\"yPos\":46.60022},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...
     per\xF2 em sap greu dir-te que ara mateix no hi s\xF3n aqu\xED perqu\xE8 s'estan
-    preparant per al festival Canet Rock a la Terra\\n\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":610.699646,\"yPos\":186.600525},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Com!?
-    Que has perdut la entrada al festival!? Com pot ser aix\xF2!?\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":142.099976,\"yPos\":185.600433},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Per
+    preparant per al festival Canet Rock a la Terra\\n\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":191.699646,\"yPos\":210.600525},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Com!?
+    Que has perdut la entrada al festival!? Com pot ser aix\xF2!?\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-276.900024,\"yPos\":209.600433},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Per
     sort tens al teu davant al guardi\xE0 del planeta FigaFlawas, ning\xFA el coneix
-    com jo, i et penso ajudar a trobar el tros d'entrada que s'amaga al planeta.\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":152.700012,\"yPos\":375.3975},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Per
+    com jo, i et penso ajudar a trobar el tros d'entrada que s'amaga al planeta.\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-266.3,\"yPos\":399.3975},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Per
     fer-ho has d'activar el planeta. Ara mateix es troba apagat donat que no sent
-    la m\xFAsica dels seus propietaris.\\r\\n\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":416.899933,\"yPos\":355.997955},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"El
+    la m\xFAsica dels seus propietaris.\\r\\n\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-2.10006714,\"yPos\":379.997955},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"El
     teu objectiu \xE9s recollir les notes de la can\xE7\xF3 en menys de 5 minuts
     i fer sonar la melodia. Si ho aconsegueixes, el planeta recuperar\xE0 la seva
-    llum i podr\xE0s buscar el tros de l'entrada.\\n\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":707.1006,\"yPos\":457.3982},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Si
+    llum i podr\xE0s buscar el tros de l'entrada.\\n\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":288.1006,\"yPos\":481.3982},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Si
     ho pots fer en menys de la meitat de temps, a m\xE9s, rebr\xE0s un premi!!\\r\\nMolta
     Sort!!\\r\\n\\r\\n\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.5}]}"
   saveVersion: 110
@@ -30214,7 +30246,67 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1294759382}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: TimerAppear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 102868655}
+        m_TargetAssemblyTypeName: ObjectCount, Assembly-CSharp
+        m_MethodName: NotesAppear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 102868655}
+        m_TargetAssemblyTypeName: ObjectCount, Assembly-CSharp
+        m_MethodName: NotesTextAppear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1294759382}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: NoPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1294759382}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: StopAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1127645218
 Transform:
   m_ObjectHideFlags: 0
@@ -31236,7 +31328,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.06797219, y: 0.008650329, z: 0.04245241}
+  m_Size: {x: 0.06797219, y: 0.02, z: 0.04245241}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1284999554
 MonoBehaviour:
@@ -31355,6 +31447,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
       propertyPath: m_Name
       value: nota (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -31810,7 +31906,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.036799528, y: 0.005342564, z: 0.13256572}
+  m_Size: {x: 0.036799528, y: 0.02, z: 0.13256572}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1298685172
 MonoBehaviour:
@@ -31908,7 +32004,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0486419, y: 0.008650329, z: 0.042452414}
+  m_Size: {x: 0.0486419, y: 0.02, z: 0.042452414}
   m_Center: {x: -0.015915183, y: 0.00070084044, z: -0.0008862899}
 --- !u!114 &1312800251
 MonoBehaviour:
@@ -32006,7 +32102,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.017320985, y: 0.015157125, z: 0.13179839}
+  m_Size: {x: 0.017320985, y: 0.02, z: 0.13179839}
   m_Center: {x: -0.25761104, y: -0.0073425206, z: -0.112092815}
 --- !u!114 &1315587389
 MonoBehaviour:
@@ -33035,7 +33131,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8d67aaed0203c2b43b02111a2fb45a2d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 57bdfde8f6ad83e4d835bebe5a498515, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -33107,7 +33203,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.013193938, y: 0.008650329, z: 0.042452414}
+  m_Size: {x: 0.013193938, y: 0.02, z: 0.042452414}
   m_Center: {x: -0.053391933, y: -0.0005437363, z: -0.014045742}
 --- !u!114 &1411269140
 MonoBehaviour:
@@ -33615,6 +33711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 0308c919b8253874d935d7fa700d0505, type: 3}
@@ -33780,7 +33880,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.013193938, y: 0.008650329, z: 0.023583231}
+  m_Size: {x: 0.013193938, y: 0.02, z: 0.023583231}
   m_Center: {x: -0.015743071, y: 0.0025535894, z: 0.011531683}
 --- !u!114 &1517060004
 MonoBehaviour:
@@ -34069,7 +34169,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.03158122, y: 0.0075544864, z: 0.12334786}
+  m_Size: {x: 0.03158122, y: 0.02, z: 0.12334786}
   m_Center: {x: -0.2473719, y: -0.017900106, z: -0.11717141}
 --- !u!114 &1541260961
 MonoBehaviour:
@@ -34159,7 +34259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 17
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":335.499969,\"yPos\":107.000031},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":44.5,\"yPos\":95},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Un
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":324.499969,\"yPos\":157.000031},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":48.5,\"yPos\":141},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Un
     cop m\xE9s. Has de recollir totes les notes en menys de 5 minuts. Bona sort!!!!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":5,\"Volume\":0.5}]}"
   saveVersion: 110
   DefaultName: 
@@ -34172,7 +34272,55 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1294759382}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: TimerAppear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 102868655}
+        m_TargetAssemblyTypeName: ObjectCount, Assembly-CSharp
+        m_MethodName: NotesAppear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 102868655}
+        m_TargetAssemblyTypeName: ObjectCount, Assembly-CSharp
+        m_MethodName: NotesTextAppear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1294759382}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: NoPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!136 &1563444262
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34686,6 +34834,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
       propertyPath: m_Name
       value: nota (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -36092,6 +36244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 0308c919b8253874d935d7fa700d0505, type: 3}
@@ -37104,7 +37260,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.011132676, y: 0.027370729, z: 0.13179862}
+  m_Size: {x: 0.011132676, y: 0.02, z: 0.13179862}
   m_Center: {x: -0.26137865, y: -0.0005378761, z: -0.11434349}
 --- !u!114 &1822293701
 MonoBehaviour:
@@ -37512,6 +37668,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
       propertyPath: m_Name
       value: nota (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -38088,6 +38248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 0308c919b8253874d935d7fa700d0505, type: 3}
@@ -38625,6 +38789,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 0308c919b8253874d935d7fa700d0505, type: 3}
@@ -38784,6 +38952,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
       propertyPath: m_Name
       value: nota (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -39013,6 +39185,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
       propertyPath: m_Name
       value: nota (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -39262,7 +39438,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.013193938, y: 0.008650329, z: 0.0065842294}
+  m_Size: {x: 0.013193938, y: 0.02, z: 0.0065842294}
   m_Center: {x: 0.029523067, y: 0.006277755, z: 0.042284485}
 --- !u!114 &2009244410
 MonoBehaviour:
@@ -40199,6 +40375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ba6939583d04b04e866d885d6bcdd88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 0308c919b8253874d935d7fa700d0505, type: 3}
@@ -40377,7 +40557,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.023363946, y: 0.021545753, z: 0.11789937}
+  m_Size: {x: 0.023363946, y: 0.02, z: 0.11789937}
   m_Center: {x: -0.028061649, y: 0.022814622, z: 0.05119804}
 --- !u!114 &2102400024
 MonoBehaviour:
@@ -40606,7 +40786,6 @@ SceneRoots:
   - {fileID: 1479734761}
   - {fileID: 1175411924}
   - {fileID: 1788437850}
-  - {fileID: 845751747}
   - {fileID: 934141347}
   - {fileID: 1360494356}
   - {fileID: 688482154}
@@ -40620,3 +40799,4 @@ SceneRoots:
   - {fileID: 1201352396}
   - {fileID: 854623935}
   - {fileID: 1677085509}
+  - {fileID: 845751747}

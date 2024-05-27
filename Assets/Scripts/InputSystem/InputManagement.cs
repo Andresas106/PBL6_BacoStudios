@@ -38,7 +38,6 @@ public class InputManagement : MonoBehaviour
     void Update()
     {
         isPaused = false;
-        //isInteracting = false;
     }
 
     void FixedUpdate()

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.01352848, g: 0.031467658, b: 0.049645305, a: 1}
+  m_IndirectSpecularColor: {r: 0.0133373, g: 0.031465925, b: 0.049719863, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5080,6 +5080,7 @@ GameObject:
   - component: {fileID: 42998647}
   - component: {fileID: 42998648}
   - component: {fileID: 42998649}
+  - component: {fileID: 42998650}
   m_Layer: 3
   m_Name: ColliderAigua1 (6)
   m_TagString: water
@@ -5121,7 +5122,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.083273895, y: 0.05438182, z: 0.1791139}
+  m_Size: {x: 0.083273895, y: 0.1, z: 0.1791139}
   m_Center: {x: -0.011719007, y: 0.011711496, z: 0.02541217}
 --- !u!114 &42998649
 MonoBehaviour:
@@ -5137,8 +5138,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &42998650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42998646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &58039382
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5262,6 +5275,10 @@ PrefabInstance:
     - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_Name
       value: nota Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8881626282052140567, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: obj_count
@@ -5394,6 +5411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8881626282052140567, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: obj_count
       value: 
@@ -5481,6 +5502,10 @@ PrefabInstance:
     - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_Name
       value: nota Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8881626282052140567, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: obj_count
@@ -5575,6 +5600,7 @@ GameObject:
   - component: {fileID: 147853469}
   - component: {fileID: 147853470}
   - component: {fileID: 147853471}
+  - component: {fileID: 147853472}
   m_Layer: 3
   m_Name: ColliderAigua1 (7)
   m_TagString: water
@@ -5616,7 +5642,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.083273895, y: 0.052082155, z: 0.1791139}
+  m_Size: {x: 0.083273895, y: 0.1, z: 0.1791139}
   m_Center: {x: -0.011718928, y: 0.02943828, z: 0.025412206}
 --- !u!114 &147853471
 MonoBehaviour:
@@ -5632,8 +5658,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &147853472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147853468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!64 &168749638
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5868,6 +5906,7 @@ GameObject:
   - component: {fileID: 222627140}
   - component: {fileID: 222627141}
   - component: {fileID: 222627142}
+  - component: {fileID: 222627143}
   m_Layer: 3
   m_Name: ColliderAigua1 (13)
   m_TagString: water
@@ -5909,7 +5948,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.08816339, y: 0.05012836, z: 0.12973878}
+  m_Size: {x: 0.08816339, y: 0.1, z: 0.12973878}
   m_Center: {x: -0.009274054, y: 0.08513424, z: 0.048722487}
 --- !u!114 &222627142
 MonoBehaviour:
@@ -5925,8 +5964,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &222627143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222627139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &231579654
 GameObject:
   m_ObjectHideFlags: 0
@@ -6171,6 +6222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8881626282052140567, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: obj_count
       value: 
@@ -6210,7 +6265,7 @@ Transform:
   m_GameObject: {fileID: 256863021}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: -114.2, z: 23.1}
+  m_LocalPosition: {x: -26, y: -114.2, z: 27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6249,7 +6304,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 282.57
+  m_Radius: 349.53
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &267211200
 GameObject:
@@ -6262,6 +6317,7 @@ GameObject:
   - component: {fileID: 267211201}
   - component: {fileID: 267211202}
   - component: {fileID: 267211203}
+  - component: {fileID: 267211204}
   m_Layer: 3
   m_Name: ColliderAigua1 (5)
   m_TagString: water
@@ -6303,7 +6359,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.083273895, y: 0.05438182, z: 0.21264862}
+  m_Size: {x: 0.083273895, y: 0.1, z: 0.21264862}
   m_Center: {x: -0.011719007, y: 0.011711496, z: 0.020515319}
 --- !u!114 &267211203
 MonoBehaviour:
@@ -6319,8 +6375,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &267211204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267211200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &277199111
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6394,7 +6462,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 586312974}
-  - {fileID: 2003127685}
+  - {fileID: 1887703400}
   - {fileID: 1142537276}
   - {fileID: 1968236781}
   - {fileID: 1594629195}
@@ -6620,6 +6688,10 @@ PrefabInstance:
     - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_Name
       value: nota Variant (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8881626282052140567, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: obj_count
@@ -7258,6 +7330,7 @@ GameObject:
   - component: {fileID: 390098952}
   - component: {fileID: 390098953}
   - component: {fileID: 390098954}
+  - component: {fileID: 390098955}
   m_Layer: 3
   m_Name: ColliderAigua1 (14)
   m_TagString: water
@@ -7299,7 +7372,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.060160395, y: 0.05012836, z: 0.088396624}
+  m_Size: {x: 0.060160395, y: 0.1, z: 0.088396624}
   m_Center: {x: -0.033717517, y: 0.085134365, z: 0.053524774}
 --- !u!114 &390098954
 MonoBehaviour:
@@ -7315,8 +7388,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &390098955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390098951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &394698313 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
@@ -7601,8 +7686,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionsPanel: {fileID: 992624884}
   mainPanel: {fileID: 0}
-  menu1Panel: {fileID: 361016764}
-  menu2Panel: {fileID: 0}
+  menu1Panel: {fileID: 0}
+  menu2Panel: {fileID: 361016764}
   colecPanel: {fileID: 1098549845}
   colec2Panel: {fileID: 0}
   controlsPanel: {fileID: 1866164686}
@@ -7966,6 +8051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8881626282052140567, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: obj_count
       value: 
@@ -8241,6 +8330,7 @@ GameObject:
   - component: {fileID: 509254840}
   - component: {fileID: 509254841}
   - component: {fileID: 509254842}
+  - component: {fileID: 509254843}
   m_Layer: 3
   m_Name: ColliderAigua1 (15)
   m_TagString: water
@@ -8282,7 +8372,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.07862869, y: 0.05012836, z: 0.05280232}
+  m_Size: {x: 0.07862869, y: 0.1, z: 0.05280232}
   m_Center: {x: -0.04128023, y: 0.08513439, z: 0.035727497}
 --- !u!114 &509254842
 MonoBehaviour:
@@ -8298,8 +8388,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &509254843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509254839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &530716674
 GameObject:
   m_ObjectHideFlags: 0
@@ -8386,6 +8488,7 @@ GameObject:
   - component: {fileID: 530729567}
   - component: {fileID: 530729568}
   - component: {fileID: 530729569}
+  - component: {fileID: 530729570}
   m_Layer: 3
   m_Name: ColliderAigua1 (9)
   m_TagString: water
@@ -8427,7 +8530,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.083273895, y: 0.05809508, z: 0.19764702}
+  m_Size: {x: 0.083273895, y: 0.1, z: 0.19764702}
   m_Center: {x: -0.01171884, y: 0.045790285, z: 0.03467883}
 --- !u!114 &530729569
 MonoBehaviour:
@@ -8443,8 +8546,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &530729570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530729566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &534525937 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
@@ -8483,6 +8598,7 @@ GameObject:
   - component: {fileID: 561082771}
   - component: {fileID: 561082772}
   - component: {fileID: 561082773}
+  - component: {fileID: 561082774}
   m_Layer: 3
   m_Name: ColliderAigua1
   m_TagString: water
@@ -8524,7 +8640,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.09041215, y: 0.031118633, z: 0.22048782}
+  m_Size: {x: 0.09041215, y: 0.1, z: 0.22048782}
   m_Center: {x: -0.0052975053, y: 0.00000005626429, z: -0.010262963}
 --- !u!114 &561082773
 MonoBehaviour:
@@ -8540,8 +8656,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &561082774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561082770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &561407096
 GameObject:
   m_ObjectHideFlags: 0
@@ -8891,6 +9019,91 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 29.459827, y: 30.449734, z: 35.212387}
   m_Center: {x: -14.229873, y: -5.289128, z: -14.14095}
+--- !u!1 &590129044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 590129045}
+  - component: {fileID: 590129047}
+  - component: {fileID: 590129046}
+  - component: {fileID: 590129048}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: AreaPlanet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &590129045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590129044}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.009010299, y: -0.0014798787, z: -0.09749292, w: 0.9951943}
+  m_LocalPosition: {x: -0.005699979, y: -0.0009000055, z: -0.06140002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2078442634}
+  m_LocalEulerAnglesHint: {x: -1.044, y: -0.068, z: -11.189}
+--- !u!136 &590129046
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590129044}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Height: 0.06
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &590129047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590129044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab58fe0012265147bded63bf611cdd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _priority: 1
+  _center: {x: 0, y: 0, z: 0}
+--- !u!114 &590129048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590129044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 554b535cb5e962c4fbae7b19e142fc4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  height: 0.06
+  centerC: 0.23
 --- !u!1 &601351961
 GameObject:
   m_ObjectHideFlags: 0
@@ -14253,6 +14466,7 @@ GameObject:
   - component: {fileID: 659149178}
   - component: {fileID: 659149179}
   - component: {fileID: 659149180}
+  - component: {fileID: 659149181}
   m_Layer: 3
   m_Name: ColliderAigua1 (4)
   m_TagString: water
@@ -14294,7 +14508,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.094224185, y: 0.04940962, z: 0.19447805}
+  m_Size: {x: 0.094224185, y: 0.1, z: 0.19447805}
   m_Center: {x: -0.0062438915, y: 0.0141976, z: 0.023489447}
 --- !u!114 &659149180
 MonoBehaviour:
@@ -14310,8 +14524,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &659149181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659149177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &660003698
 GameObject:
   m_ObjectHideFlags: 0
@@ -14530,6 +14756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota Variant (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8881626282052140567, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: obj_count
       value: 
@@ -14617,6 +14847,10 @@ PrefabInstance:
     - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_Name
       value: nota Variant (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8881626282052140567, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: obj_count
@@ -14845,6 +15079,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8881626282052140567, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: obj_count
       value: 
@@ -15017,6 +15255,7 @@ GameObject:
   - component: {fileID: 761038036}
   - component: {fileID: 761038037}
   - component: {fileID: 761038038}
+  - component: {fileID: 761038039}
   m_Layer: 3
   m_Name: ColliderAigua1 (2)
   m_TagString: water
@@ -15058,7 +15297,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.086491555, y: 0.041021496, z: 0.24486521}
+  m_Size: {x: 0.086491555, y: 0.1, z: 0.24486521}
   m_Center: {x: -0.010110189, y: 0.018391663, z: -0.010074192}
 --- !u!114 &761038038
 MonoBehaviour:
@@ -15074,8 +15313,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &761038039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761038035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &793642760
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15186,6 +15437,7 @@ GameObject:
   - component: {fileID: 798323197}
   - component: {fileID: 798323198}
   - component: {fileID: 798323199}
+  - component: {fileID: 798323200}
   m_Layer: 3
   m_Name: ColliderAigua1 (3)
   m_TagString: water
@@ -15227,7 +15479,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.10645407, y: 0.0410215, z: 0.22628786}
+  m_Size: {x: 0.10645407, y: 0.1, z: 0.22628786}
   m_Center: {x: -0.00012895522, y: 0.018391658, z: 0.0035433404}
 --- !u!114 &798323199
 MonoBehaviour:
@@ -15243,8 +15495,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &798323200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798323196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &808366463
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16033,11 +16297,11 @@ PrefabInstance:
     - {fileID: -3514583509322534000, guid: 25b6093af226785439a3730feed550f7, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 25b6093af226785439a3730feed550f7, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 1903831164}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 25b6093af226785439a3730feed550f7, type: 3}
-      insertIndex: 42
+      insertIndex: 41
       addedObject: {fileID: 1885001917}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 25b6093af226785439a3730feed550f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1903831164}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 25b6093af226785439a3730feed550f7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1822327936}
@@ -16066,12 +16330,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 25b6093af226785439a3730feed550f7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1498692870}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 25b6093af226785439a3730feed550f7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1498692872}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 25b6093af226785439a3730feed550f7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1498692871}
     - targetCorrespondingSourceObject: {fileID: 1717550674075616676, guid: 25b6093af226785439a3730feed550f7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 369471421}
@@ -17867,6 +18125,7 @@ GameObject:
   - component: {fileID: 983717338}
   - component: {fileID: 983717339}
   - component: {fileID: 983717340}
+  - component: {fileID: 983717341}
   m_Layer: 3
   m_Name: ColliderAigua1 (8)
   m_TagString: water
@@ -17908,7 +18167,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.083273895, y: 0.05208216, z: 0.18745501}
+  m_Size: {x: 0.083273895, y: 0.1, z: 0.18745501}
   m_Center: {x: -0.011718911, y: 0.029438306, z: 0.029582711}
 --- !u!114 &983717340
 MonoBehaviour:
@@ -17924,8 +18183,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &983717341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983717337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &992624884
 GameObject:
   m_ObjectHideFlags: 0
@@ -18113,6 +18384,7 @@ GameObject:
   - component: {fileID: 994927857}
   - component: {fileID: 994927858}
   - component: {fileID: 994927859}
+  - component: {fileID: 994927860}
   m_Layer: 3
   m_Name: ColliderAigua1 (12)
   m_TagString: water
@@ -18154,7 +18426,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.08816339, y: 0.03631731, z: 0.16843171}
+  m_Size: {x: 0.08816339, y: 0.1, z: 0.16843171}
   m_Center: {x: -0.00927402, y: 0.078228645, z: 0.04928656}
 --- !u!114 &994927859
 MonoBehaviour:
@@ -18170,8 +18442,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &994927860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994927856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &996595795 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
@@ -23871,9 +24155,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":595.6,\"yPos\":28.59999},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":602,\"yPos\":253.000061},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[2],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":352,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Guaita
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":434.099976,\"yPos\":28.59999},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":440.5,\"yPos\":253.000061},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[2],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":190.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Guaita
     tu, ja m'havien avisat que passaries per aqu\xED els meus amics dels altres planetes!
-    Que tal com vas amb la cerca de l'entrada?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":601.2001,\"yPos\":126.400024},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Com!!
+    Que tal com vas amb la cerca de l'entrada?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":439.700073,\"yPos\":126.400024},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Com!!
     Que nom\xE9s et queda un tros d'entrada per a trobar!!?? Doncs no perdem el temps
     parlant, que comenci la recerca de les notes!!\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -24256,6 +24540,7 @@ GameObject:
   - component: {fileID: 1222292458}
   - component: {fileID: 1222292459}
   - component: {fileID: 1222292460}
+  - component: {fileID: 1222292461}
   m_Layer: 3
   m_Name: ColliderAigua1 (1)
   m_TagString: water
@@ -24297,7 +24582,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.09326452, y: 0.054461624, z: 0.282082}
+  m_Size: {x: 0.09326452, y: 0.1, z: 0.282082}
   m_Center: {x: -0.006723708, y: 0.01167162, z: -0.014215135}
 --- !u!114 &1222292460
 MonoBehaviour:
@@ -24313,8 +24598,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &1222292461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222292457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1224534377
 GameObject:
   m_ObjectHideFlags: 0
@@ -25676,6 +25973,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota Variant (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8881626282052140567, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: obj_count
       value: 
@@ -25788,7 +26089,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2520815895468854473, guid: fa473f43264c8dc4097a54079bee8370, type: 3}
       propertyPath: time
-      value: 300
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2520815895468854473, guid: fa473f43264c8dc4097a54079bee8370, type: 3}
       propertyPath: textobj
@@ -25821,7 +26122,7 @@ PrefabInstance:
     - target: {fileID: 2520815895468854473, guid: fa473f43264c8dc4097a54079bee8370, type: 3}
       propertyPath: myConversationTrigger
       value: 
-      objectReference: {fileID: 2003127684}
+      objectReference: {fileID: 1887703399}
     - target: {fileID: 3227765995912820853, guid: fa473f43264c8dc4097a54079bee8370, type: 3}
       propertyPath: m_Name
       value: Timer 1
@@ -30952,30 +31253,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &1498692871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853497037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 238849ddd0c10e340ba9b360bb414004, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1498692872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853497037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 238849ddd0c10e340ba9b360bb414004, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1509202806
 GameObject:
   m_ObjectHideFlags: 0
@@ -31525,7 +31802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 2
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":352.2,\"yPos\":137.40004},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":352,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Un
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":190.700012,\"yPos\":137.40004},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":190.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Un
     cop m\xE9s has de recollir totes les notes en menys de 5 minuts. Bona sort!!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -31538,7 +31815,55 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 741184472}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: TimerAppear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6859626792039003755}
+        m_TargetAssemblyTypeName: ObjectCount, Assembly-CSharp
+        m_MethodName: NotesAppear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6859626792039003755}
+        m_TargetAssemblyTypeName: ObjectCount, Assembly-CSharp
+        m_MethodName: NotesTextAppear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 741184472}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: NoPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1606569964
 GameObject:
   m_ObjectHideFlags: 0
@@ -31926,8 +32251,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerObject: {fileID: 1885001917}
-  orbitSpeed: 20
-  selfRotationSpeed: 20
+  orbitSpeed: 5
+  selfRotationSpeed: 5
 --- !u!64 &1673981112
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31982,6 +32307,7 @@ GameObject:
   - component: {fileID: 1709993571}
   - component: {fileID: 1709993572}
   - component: {fileID: 1709993573}
+  - component: {fileID: 1709993574}
   m_Layer: 3
   m_Name: ColliderAigua1 (10)
   m_TagString: water
@@ -32023,7 +32349,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.08816339, y: 0.055459894, z: 0.18769363}
+  m_Size: {x: 0.08816339, y: 0.1, z: 0.18769363}
   m_Center: {x: -0.009274052, y: 0.068657294, z: 0.039655536}
 --- !u!114 &1709993573
 MonoBehaviour:
@@ -32039,8 +32365,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &1709993574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709993570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1713112144 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
@@ -32142,6 +32480,10 @@ PrefabInstance:
     - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_Name
       value: nota Variant (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8881626282052140567, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: obj_count
@@ -33003,7 +33345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1831987095
 Transform:
   m_ObjectHideFlags: 0
@@ -33365,6 +33707,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2078442634}
     m_Modifications:
+    - target: {fileID: 617471524139482174, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1156763608280831489, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_Size
       value: 15.8
@@ -33433,6 +33779,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8881626282052140567, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: obj_count
       value: 
@@ -33492,6 +33846,88 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: 0, z: 10}
+--- !u!1 &1887703399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1887703400}
+  - component: {fileID: 1887703403}
+  - component: {fileID: 1887703402}
+  - component: {fileID: 1887703401}
+  m_Layer: 0
+  m_Name: TimerOutConversationTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1887703400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887703399}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.08382588, y: -0.4925898, z: 0.047741763, w: 0.8648984}
+  m_LocalPosition: {x: -64.9, y: -288.1, z: -53.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 287460909}
+  m_LocalEulerAnglesHint: {x: 11.072, y: -59.326, z: 0}
+--- !u!114 &1887703401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887703399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd2434bf05f3ff469b1f03277417e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myConversation: {fileID: 1142537277}
+  myTrigger: {fileID: 1887703399}
+  keyE: {fileID: 605423204}
+--- !u!114 &1887703402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887703399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1887703403
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887703399}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 29.459827, y: 30.449734, z: 35.212387}
+  m_Center: {x: -14.229873, y: -5.289128, z: -14.14095}
 --- !u!1 &1899558922
 GameObject:
   m_ObjectHideFlags: 0
@@ -33503,6 +33939,7 @@ GameObject:
   - component: {fileID: 1899558923}
   - component: {fileID: 1899558924}
   - component: {fileID: 1899558925}
+  - component: {fileID: 1899558926}
   m_Layer: 3
   m_Name: ColliderAigua1 (11)
   m_TagString: water
@@ -33544,7 +33981,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.08816339, y: 0.055459876, z: 0.16843171}
+  m_Size: {x: 0.08816339, y: 0.1, z: 0.16843171}
   m_Center: {x: -0.009274014, y: 0.068657316, z: 0.049286515}
 --- !u!114 &1899558925
 MonoBehaviour:
@@ -33560,8 +33997,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: 10
+  movementSpeed: -2
   player: {fileID: 6859626792039003753}
+--- !u!114 &1899558926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899558922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1900345660
 GameObject:
   m_ObjectHideFlags: 0
@@ -33680,9 +34129,6 @@ GameObject:
   - component: {fileID: 1903831167}
   - component: {fileID: 1903831166}
   - component: {fileID: 1903831165}
-  - component: {fileID: 1903831168}
-  - component: {fileID: 1903831169}
-  - component: {fileID: 1903831170}
   m_Layer: 3
   m_Name: Aigua.003 (1)
   m_TagString: water
@@ -33793,55 +34239,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903831163}
   m_Mesh: {fileID: -5929066042854534729, guid: cd545c1fb979b0946ac9755c46659f65, type: 3}
---- !u!114 &1903831168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903831163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0de19c1a180d44c409cecb2bce21a303, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsOnPiano: 0
-  IsOnWater: 0
-  movementSpeed: 10
-  player: {fileID: 6859626792039003753}
---- !u!65 &1903831169
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903831163}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 0.78624666, y: 1.0996227, z: 0.2940093}
-  m_Center: {x: 0.036472246, y: -0.29730493, z: 0.023451949}
---- !u!114 &1903831170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903831163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1908606553
 GameObject:
   m_ObjectHideFlags: 0
@@ -34203,7 +34600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 2
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":351.4,"yPos":138.200027},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":null,"parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":352,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"S''ha
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":148.9,"yPos":259.2},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":null,"parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":149.5,"yPos":143},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"S''ha
     acabat el temps. Si ho vols tornar a intentar, torna a parlar amb mi.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -34216,7 +34613,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 741184472}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: NoPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1976467275
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34662,88 +35071,6 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!1 &2003127684
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2003127685}
-  - component: {fileID: 2003127688}
-  - component: {fileID: 2003127687}
-  - component: {fileID: 2003127686}
-  m_Layer: 0
-  m_Name: TimerOutConversationTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &2003127685
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003127684}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -60.7, y: -308, z: -66.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 287460909}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2003127686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003127684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd2434bf05f3ff469b1f03277417e1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myConversation: {fileID: 1594629196}
-  myTrigger: {fileID: 2003127684}
-  keyE: {fileID: 605423204}
---- !u!114 &2003127687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003127684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bd6ae98c8227c1499a3073398b4f472, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &2003127688
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003127684}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &2007874365
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35546,6 +35873,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nota Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8881626282052140567, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: obj_count
       value: 
@@ -35648,22 +35979,54 @@ PrefabInstance:
       propertyPath: m_Name
       value: epic_solete
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c8866e9f1b01cd4ca69cef454ab5b74, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8c8866e9f1b01cd4ca69cef454ab5b74, type: 3}
       insertIndex: -1
       addedObject: {fileID: 678845867}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8c8866e9f1b01cd4ca69cef454ab5b74, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 590129045}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c8866e9f1b01cd4ca69cef454ab5b74, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1663760711}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c8866e9f1b01cd4ca69cef454ab5b74, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2078442637}
   m_SourcePrefab: {fileID: 100100000, guid: 8c8866e9f1b01cd4ca69cef454ab5b74, type: 3}
 --- !u!4 &2078442634 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8c8866e9f1b01cd4ca69cef454ab5b74, type: 3}
   m_PrefabInstance: {fileID: 2078442633}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &2078442637
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663760710}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1541220485813424824, guid: 8c8866e9f1b01cd4ca69cef454ab5b74, type: 3}
 --- !u!1001 &2090936103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35739,6 +36102,10 @@ PrefabInstance:
     - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_Name
       value: nota Variant (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8881626282052140567, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: obj_count
@@ -36405,7 +36772,7 @@ PrefabInstance:
     - target: {fileID: 1854385861469186792, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
       propertyPath: sdw
       value: 
-      objectReference: {fileID: 1903831168}
+      objectReference: {fileID: 0}
     - target: {fileID: 1854385861469186792, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
       propertyPath: timer
       value: 
@@ -37387,6 +37754,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8065610505832624591, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6859626792039003754}
+    - targetCorrespondingSourceObject: {fileID: 8065610505832624591, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6859626792039003761}
   m_SourcePrefab: {fileID: 100100000, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
 --- !u!1 &6859626792039003744 stripped
 GameObject:
@@ -37447,6 +37817,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079a81385ffebf64f8a48c1213c6d5d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6859626792039003761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6859626792039003744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dd1b4993539b9c49a97f37340e8580f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 361016764}
+  optionsMenu: {fileID: 992624884}
+  colecMenu: {fileID: 1098549845}
+  audioSourcesToIgnore: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -37456,10 +37842,10 @@ SceneRoots:
   - {fileID: 1137675014}
   - {fileID: 1542874409}
   - {fileID: 422773016}
-  - {fileID: 853497033}
-  - {fileID: 973446710}
   - {fileID: 6859626792039003743}
+  - {fileID: 973446710}
   - {fileID: 1453542968}
+  - {fileID: 853497033}
   - {fileID: 287460909}
   - {fileID: 1444989071}
   - {fileID: 1451135360}

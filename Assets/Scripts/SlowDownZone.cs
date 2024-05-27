@@ -34,7 +34,6 @@ public class SlowDownZone : MonoBehaviour
         Rigidbody rb = other.GetComponent<Rigidbody>();
         if (rb != null)
         {
-            // Reducimos la velocidad del objeto
             controlRun(rb);
         }
     }
@@ -61,16 +60,16 @@ public class SlowDownZone : MonoBehaviour
         }
         else if(!isRunning && IsOnPiano)
         {
+            
             rb.MovePosition(rb.position + direction * (movementSpeed * 2 * Time.deltaTime));
         }
-
-        if (isRunning && IsOnWater)
+        else if(isRunning && IsOnWater)
         {
             rb.MovePosition(rb.position + direction * (movementSpeed * Time.deltaTime));
         }
         else if (!isRunning && IsOnWater)
         {
-            rb.MovePosition(rb.position + direction * (movementSpeed / 2 * Time.deltaTime));
+            rb.MovePosition(rb.position + direction * (movementSpeed * 2 * Time.deltaTime));
         }
     }
 
