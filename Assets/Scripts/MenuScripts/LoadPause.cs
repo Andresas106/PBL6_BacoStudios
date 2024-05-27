@@ -9,6 +9,7 @@ public class LoadPause : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject optionsMenu;
     [SerializeField] private GameObject colecMenu;
+    [SerializeField] private GameObject controlsMenu;
     [SerializeField] private AudioSource[] audioSourcesToIgnore;
     private bool isPaused;
     
@@ -27,7 +28,7 @@ public class LoadPause : MonoBehaviour
     {
         isPaused = input.isPaused;
 
-        if(isPaused && !pauseMenu.activeInHierarchy && !optionsMenu.activeInHierarchy && !colecMenu.activeInHierarchy)
+        if(isPaused && !pauseMenu.activeInHierarchy && !optionsMenu.activeInHierarchy && !colecMenu.activeInHierarchy && !controlsMenu.activeInHierarchy)
         {
             pauseMenu.SetActive(true);
             Time.timeScale = 0;
@@ -49,6 +50,12 @@ public class LoadPause : MonoBehaviour
         {
             Time.timeScale = 1;
             colecMenu.SetActive(false);
+            AudioListener.pause = false;
+        }
+        else if(isPaused && controlsMenu.activeInHierarchy)
+        {
+            Time.timeScale = 1;
+            controlsMenu.SetActive(false);
             AudioListener.pause = false;
         }
     }

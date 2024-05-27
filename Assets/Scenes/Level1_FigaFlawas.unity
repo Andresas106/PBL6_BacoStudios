@@ -22558,6 +22558,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1659057137}
   optionsMenu: {fileID: 628297991}
   colecMenu: {fileID: 529580677}
+  controlsMenu: {fileID: 741709324}
   audioSourcesToIgnore:
   - {fileID: 1659057141}
   - {fileID: 628297995}
