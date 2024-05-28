@@ -37240,6 +37240,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.041627377
       objectReference: {fileID: 0}
+    - target: {fileID: 988697258103739469, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 66ad163de68d4ec468c11a1da63a954c, type: 2}
     - target: {fileID: 1208531615958414339, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.09292425
@@ -37364,6 +37368,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.24960129
       objectReference: {fileID: 0}
+    - target: {fileID: 1729345265727359232, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 66ad163de68d4ec468c11a1da63a954c, type: 2}
     - target: {fileID: 1854385861469186792, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
       propertyPath: sdw
       value: 
