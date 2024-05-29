@@ -13,7 +13,8 @@ public class LevelCompleted : MonoBehaviour
     [SerializeField] private GameObject stickerText;
     [SerializeField] private GameObject texto_entrada;
 
-
+    [SerializeField] private GameObject objectToActivate; // Nuevo GameObject a activar
+    [SerializeField] private GameObject objectToDeactivate; // Nuevo GameObject a desactivar
 
     private bool enter = false;
     private Timer timerScript;
@@ -58,6 +59,7 @@ public class LevelCompleted : MonoBehaviour
             ActivarEntrada();
             ObtenerSticker1();
             ObtenerSticker2();
+            SwitchActiveObjects(); // Llama al nuevo método
         }
     }
 
@@ -71,14 +73,12 @@ public class LevelCompleted : MonoBehaviour
         {
             playlistController.SwitchPlaylist(false); // Cambia a la lista 2
         }
-
     }
 
     public void ObtenerSticker1()
     {
-        if(sceneName == "Level1_FigaFlawas")
+        if (sceneName == "Level1_FigaFlawas")
         {
-           
             if (timerScript.remainingTime >= 150)
             {
                 stickerText.SetActive(true);
@@ -86,14 +86,12 @@ public class LevelCompleted : MonoBehaviour
                 PlayerPrefs.Save();
             }
         }
-        
     }
 
     public void ObtenerSticker2()
     {
-        if(sceneName == "Level2_TheTyets")
+        if (sceneName == "Level2_TheTyets")
         {
-            
             if (timerScript.remainingTime >= 150)
             {
                 stickerText.SetActive(true);
@@ -101,6 +99,17 @@ public class LevelCompleted : MonoBehaviour
                 PlayerPrefs.Save();
             }
         }
-        
+    }
+
+    private void SwitchActiveObjects()
+    {
+        if (objectToDeactivate != null)
+        {
+            objectToDeactivate.SetActive(false);
+        }
+        if (objectToActivate != null)
+        {
+            objectToActivate.SetActive(true);
+        }
     }
 }
