@@ -25,6 +25,9 @@ public class LevelCompleted : MonoBehaviour
     // Añadimos una referencia al DualPlaylistController
     [SerializeField] private DualPlaylistController playlistController;
 
+    // Añadimos una referencia al SkyboxExposureChanger
+    [SerializeField] private SkyboxExposureChanger skyboxExposureChanger;
+
     private void Awake()
     {
         if (!PlayerPrefs.HasKey("sticker1"))
@@ -60,6 +63,12 @@ public class LevelCompleted : MonoBehaviour
             ObtenerSticker1();
             ObtenerSticker2();
             SwitchActiveObjects(); // Llama al nuevo método
+
+            // Inicia el cambio de exposición del skybox
+            if (skyboxExposureChanger != null)
+            {
+                skyboxExposureChanger.StartChangingExposure();
+            }
         }
     }
 

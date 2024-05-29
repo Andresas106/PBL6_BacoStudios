@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0133373, g: 0.031465925, b: 0.049719863, a: 1}
+  m_IndirectSpecularColor: {r: 0.02340806, g: 0.06399203, b: 0.07606395, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5138,7 +5138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &42998650
 MonoBehaviour:
@@ -5733,7 +5733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &147853472
 MonoBehaviour:
@@ -5825,7 +5825,10 @@ MonoBehaviour:
   entrada: {fileID: 0}
   stickerText: {fileID: 0}
   texto_entrada: {fileID: 1618545363}
+  objectToActivate: {fileID: 0}
+  objectToDeactivate: {fileID: 0}
   playlistController: {fileID: 0}
+  skyboxExposureChanger: {fileID: 0}
 --- !u!4 &185913490
 Transform:
   m_ObjectHideFlags: 0
@@ -6039,7 +6042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &222627143
 MonoBehaviour:
@@ -6450,7 +6453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &267211204
 MonoBehaviour:
@@ -7463,7 +7466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &390098955
 MonoBehaviour:
@@ -8463,7 +8466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &509254843
 MonoBehaviour:
@@ -8621,7 +8624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &530729570
 MonoBehaviour:
@@ -8731,7 +8734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &561082774
 MonoBehaviour:
@@ -14599,7 +14602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &659149181
 MonoBehaviour:
@@ -15390,7 +15393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &761038039
 MonoBehaviour:
@@ -15572,7 +15575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &798323200
 MonoBehaviour:
@@ -18409,7 +18412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &983717341
 MonoBehaviour:
@@ -18668,7 +18671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &994927860
 MonoBehaviour:
@@ -24860,7 +24863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &1222292461
 MonoBehaviour:
@@ -32729,7 +32732,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663760710}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99cdfdf91c121de489c4b322eb44594e, type: 3}
   m_Name: 
@@ -32849,7 +32852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &1709993574
 MonoBehaviour:
@@ -34556,7 +34559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOnPiano: 0
   IsOnWater: 0
-  movementSpeed: -2
+  movementSpeed: -5
   player: {fileID: 6859626792039003753}
 --- !u!114 &1899558926
 MonoBehaviour:
@@ -35811,7 +35814,7 @@ RectTransform:
   m_GameObject: {fileID: 2025684731}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7259, y: 0.7259, z: 0.7259}
+  m_LocalScale: {x: 0.91, y: 1.29, z: 0.91}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 111481900}
@@ -35819,8 +35822,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2236, y: -308.43018}
-  m_SizeDelta: {x: -6600.001, y: 0.6422119}
+  m_AnchoredPosition: {x: 3995, y: 168.99985}
+  m_SizeDelta: {x: -4887, y: -0.21260071}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!64 &2029088844
 MeshCollider:
@@ -36532,7 +36535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c8866e9f1b01cd4ca69cef454ab5b74, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -27.1
+      value: -50.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c8866e9f1b01cd4ca69cef454ab5b74, type: 3}
       propertyPath: m_LocalPosition.z
@@ -36632,7 +36635,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663760710}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34846141760dde84ca6e8d458a12feff, type: 3}
   m_Name: 
