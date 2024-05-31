@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &15463698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1423,7 +1423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &93493704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7249,7 +7249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &226273464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7877,7 +7877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &265963018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8583,7 +8583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &308292410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13532,7 +13532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &354457753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15088,7 +15088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &492855907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17296,7 +17296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &658305149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18764,7 +18764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &747138006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20327,7 +20327,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.378
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -20718,7 +20718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &791635284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22679,7 +22679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &856182510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29232,7 +29232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &936345832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29690,7 +29690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &996352446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30392,7 +30392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &1059913404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31906,7 +31906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &1284999555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32464,7 +32464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &1298685173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32562,7 +32562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &1312800252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32660,7 +32660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &1315587390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33762,7 +33762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &1411269141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34531,7 +34531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &1517060005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34820,7 +34820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &1541260962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38184,7 +38184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &1822293702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40567,7 +40567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &2009244411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41026,7 +41026,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 83
+  Priority: 81
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -41805,7 +41805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 256918640b3ab964e80b0c9b3156c679, type: 3}
-  volume: 2
+  volume: 5
 --- !u!114 &2102400025
 MonoBehaviour:
   m_ObjectHideFlags: 0
