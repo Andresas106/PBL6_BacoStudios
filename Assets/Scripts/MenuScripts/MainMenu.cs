@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject colec2Panel;
     [SerializeField] private GameObject controlsPanel;
     [SerializeField] private GameObject creditsPanel;
-    [SerializeField] private GameObject controlsPopPanel;
+    [SerializeField] private GameObject controlsPopPanel = null;
     [SerializeField] private GameObject texto_habitant;
 
     public int i;
@@ -22,7 +22,11 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
-        controlsPopPanel.SetActive(true);
+        if(controlsPopPanel != null)
+        {
+            controlsPopPanel.SetActive(true);
+        }
+        
     }
 
     public void StartGameFromPopUp()

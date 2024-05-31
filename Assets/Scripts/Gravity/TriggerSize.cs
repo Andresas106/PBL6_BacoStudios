@@ -39,7 +39,7 @@ public class TriggerSize : MonoBehaviour
 
     IEnumerator FirstWaitTime()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
 
         myCollider.height = height;
         Vector3 center = myCollider.center;
@@ -50,7 +50,7 @@ public class TriggerSize : MonoBehaviour
 
     IEnumerator SecondWaitTime()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
 
         myCollider.height = originalSize;
         myCollider.center = originalCenter;

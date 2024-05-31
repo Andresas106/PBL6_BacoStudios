@@ -43,7 +43,6 @@ public class InputManagement : MonoBehaviour
     void FixedUpdate()
     {
         isJumping = false;
-        
     }
 
     private void onInteractInput(InputAction.CallbackContext context)

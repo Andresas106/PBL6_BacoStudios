@@ -69,7 +69,7 @@ public class SlowDownZone : MonoBehaviour
         }
         else if (!isRunning && IsOnWater)
         {
-            rb.MovePosition(rb.position + direction * (movementSpeed * 2 * Time.deltaTime));
+            rb.MovePosition(rb.position + direction * (movementSpeed * 1.25f * Time.deltaTime));
         }
     }
 
