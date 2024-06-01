@@ -15,6 +15,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private GameObject textobj;
     [SerializeField] private AudioSource NPCAudio;
     [SerializeField] private GameObject texto_habitant;
+    [SerializeField] private GameObject exclamacion;
 
 
     private float timeElapsed;
@@ -68,6 +69,7 @@ public class Timer : MonoBehaviour
         timerobj.SetActive(true);
         textobj.SetActive(true);
         texto_habitant.SetActive(false);
+        exclamacion.SetActive(false);
 
     }
 

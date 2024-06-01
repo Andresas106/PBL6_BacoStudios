@@ -22,8 +22,9 @@ public class LevelCompleted : MonoBehaviour
     private Scene m_Scene;
     private string sceneName;
 
-    // Añadimos una referencia al DualPlaylistController
-    [SerializeField] private DualPlaylistController playlistController;
+    // Añadimos referencias tanto para DualPlaylistController como para AudioController
+    [SerializeField] private DualPlaylistController dualPlaylistController;
+    [SerializeField] private AudioController audioController;
 
     // Añadimos una referencia al SkyboxExposureChanger
     [SerializeField] private SkyboxExposureChanger skyboxExposureChanger;
@@ -78,9 +79,13 @@ public class LevelCompleted : MonoBehaviour
         texto_entrada.SetActive(true);
 
         // Cambia a la segunda lista cuando se activa la entrada
-        if (playlistController != null)
+        if (dualPlaylistController != null)
         {
-            playlistController.SwitchPlaylist(false); // Cambia a la lista 2
+            dualPlaylistController.SwitchPlaylist(false); // Cambia a la lista 2
+        }
+        else if (audioController != null)
+        {
+            audioController.SwitchPlaylist(false); // Cambia a la lista 2
         }
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.573
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.049489796, g: 0.1507189, b: 0.17711863, a: 0.573}
+  m_IndirectSpecularColor: {r: 0.013412819, g: 0.03934181, b: 0.04892365, a: 0.573}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1505,13 +1505,13 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 16.81
+  m_Intensity: 10.45
   m_Range: 56.09566
   m_SpotAngle: 17.961699
   m_InnerSpotAngle: 15.201535
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1563,13 +1563,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96584739}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.06448543, y: 0.042577058, z: 0.0029717225, w: 0.9970055}
-  m_LocalPosition: {x: -156.11453, y: -140.87384, z: -192.77979}
+  m_LocalRotation: {x: -0.25974363, y: 0.03633211, z: -0.3493344, w: 0.8995436}
+  m_LocalPosition: {x: -162.71, y: -153.99, z: -188.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1911195122}
-  m_LocalEulerAnglesHint: {x: -7.402, y: 4.889, z: 0.025}
+  m_LocalEulerAnglesHint: {x: -26.226, y: 15.972, z: -46.191}
 --- !u!114 &102868655 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4738399984169705847, guid: d96f130ab2d5b2942aa56816e1b37953, type: 3}
@@ -7079,6 +7079,90 @@ RectTransform:
   m_AnchoredPosition: {x: 3995, y: 169}
   m_SizeDelta: {x: -4887, y: -0.21252441}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &212025687
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.6490068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.6490068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.6490068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.73
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 38.06
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -100.18
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5650283
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.21408343
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.29773998
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.73909557
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 11.431
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -41.769
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 100.831
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_Name
+      value: lampara
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632055958874330854, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632055958874330854, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632055958874330854, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 339380118}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
 --- !u!135 &213052784
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13463,6 +13547,100 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.008395066
   m_Center: {x: -0.000000014901161, y: 0.000000007450581, z: 0.0000000037252903}
+--- !u!1 &339380117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 339380118}
+  - component: {fileID: 339380119}
+  m_Layer: 0
+  m_Name: Spot Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &339380118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339380117}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1399659967}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!108 &339380119
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339380117}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 3.14
+  m_Range: 5.73
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 1
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &354457749
 GameObject:
   m_ObjectHideFlags: 0
@@ -17720,19 +17898,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1500d8d19d4cf3842b35a02f74df141d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.62
+      value: 24.91
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1500d8d19d4cf3842b35a02f74df141d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 246.5
+      value: 248.51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1500d8d19d4cf3842b35a02f74df141d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -66.4
+      value: -71.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1500d8d19d4cf3842b35a02f74df141d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7858567
+      value: 0.03703685
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1500d8d19d4cf3842b35a02f74df141d, type: 3}
       propertyPath: m_LocalRotation.x
@@ -17740,11 +17918,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1500d8d19d4cf3842b35a02f74df141d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6184087
+      value: -0.99931395
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1500d8d19d4cf3842b35a02f74df141d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1500d8d19d4cf3842b35a02f74df141d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -17752,7 +17930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1500d8d19d4cf3842b35a02f74df141d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -283.6
+      value: -175.755
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1500d8d19d4cf3842b35a02f74df141d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -17764,7 +17942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1500d8d19d4cf3842b35a02f74df141d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -20308,13 +20486,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playlist1:
-  - {fileID: 8300000, guid: d1c6c70eef84c3641a5f96303c119e82, type: 3}
   - {fileID: 8300000, guid: 2b40c21d6ee49a34d9549416643f532a, type: 3}
   - {fileID: 8300000, guid: 8f2d57a2245317e4b84f4f70100d2cad, type: 3}
+  - {fileID: 8300000, guid: d1c6c70eef84c3641a5f96303c119e82, type: 3}
   playlist2:
-  - {fileID: 8300000, guid: d5d3c4ae32c20f9458072689dac7adc0, type: 3}
   - {fileID: 8300000, guid: a01b831625feaa445a31035f8e3cf309, type: 3}
   - {fileID: 8300000, guid: 00d2de6effdff344490a973ad8de29da, type: 3}
+  - {fileID: 8300000, guid: d5d3c4ae32c20f9458072689dac7adc0, type: 3}
 --- !u!82 &777791256
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30851,19 +31029,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 25
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":288.700439,\"yPos\":601.3979},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[13],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":49.7998352,\"yPos\":61.99991},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":431.1999,\"yPos\":230.199738},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-63.00003,\"yPos\":225.199646},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-120.399994,\"yPos\":500.997131},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[9],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":294.4007,\"yPos\":390.19754},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[11],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-274.099976,\"yPos\":311.79834},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[7],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-228.5,\"yPos\":46},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ostres!!
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":751.600464,\"yPos\":577.3979},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[13],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":512.6998,\"yPos\":37.99991},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":894.0999,\"yPos\":206.199738},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":399.9,\"yPos\":201.199646},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":342.500031,\"yPos\":476.997131},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[9],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":757.3007,\"yPos\":366.19754},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[11],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.800049,\"yPos\":287.79834},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[7],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":234.400024,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ostres!!
     Que estrany trobar-se ning\xFA per aqu\xED aquests dies!! Com ja deus saber aquest
-    \xE9s el planeta dels FigaFlawas, ...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":429.899963,\"yPos\":46.60022},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...
+    \xE9s el planeta dels FigaFlawas, ...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":892.8,\"yPos\":22.60022},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...
     per\xF2 em sap greu dir-te que ara mateix no hi s\xF3n aqu\xED perqu\xE8 s'estan
-    preparant per al festival Canet Rock a la Terra\\n\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":191.699646,\"yPos\":210.600525},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Com!?
-    Que has perdut la entrada al festival!? Com pot ser aix\xF2!?\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-276.900024,\"yPos\":209.600433},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Per
+    preparant per al festival Canet Rock a la Terra\\n\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":654.5997,\"yPos\":186.600525},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Com!?
+    Que has perdut la entrada al festival!? Com pot ser aix\xF2!?\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":186,\"yPos\":185.600433},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Per
     sort tens al teu davant al guardi\xE0 del planeta FigaFlawas, ning\xFA el coneix
-    com jo, i et penso ajudar a trobar el tros d'entrada que s'amaga al planeta.\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-266.3,\"yPos\":399.3975},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Per
+    com jo, i et penso ajudar a trobar el tros d'entrada que s'amaga al planeta.\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":196.600037,\"yPos\":375.3975},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Per
     fer-ho has d'activar el planeta. Ara mateix es troba apagat donat que no sent
-    la m\xFAsica dels seus propietaris.\\r\\n\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-2.10006714,\"yPos\":379.997955},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"El
+    la m\xFAsica dels seus propietaris.\\r\\n\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":460.799957,\"yPos\":355.997955},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"El
     teu objectiu \xE9s recollir les notes de la can\xE7\xF3 en menys de 5 minuts
     i fer sonar la melodia. Si ho aconsegueixes, el planeta recuperar\xE0 la seva
-    llum i podr\xE0s buscar el tros de l'entrada.\\n\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":288.1006,\"yPos\":481.3982},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Si
+    llum i podr\xE0s buscar el tros de l'entrada.\\n\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1.5,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":751.0006,\"yPos\":457.3982},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Si
     ho pots fer en menys de la meitat de temps, a m\xE9s, rebr\xE0s un premi!!\\r\\nMolta
     Sort!!\\r\\n\\r\\n\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.5}]}"
   saveVersion: 110
@@ -30889,67 +31067,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1294759382}
-        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
-        m_MethodName: TimerAppear
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 102868655}
-        m_TargetAssemblyTypeName: ObjectCount, Assembly-CSharp
-        m_MethodName: NotesAppear
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 102868655}
-        m_TargetAssemblyTypeName: ObjectCount, Assembly-CSharp
-        m_MethodName: NotesTextAppear
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1294759382}
-        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
-        m_MethodName: NoPause
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1294759382}
-        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
-        m_MethodName: StopAudio
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &1127645218
 Transform:
   m_ObjectHideFlags: 0
@@ -31018,7 +31136,7 @@ Animator:
   m_GameObject: {fileID: 1159840952}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9bf220d090bf1a44c842dfb3c5865654, type: 2}
+  m_Controller: {fileID: 9100000, guid: ff0aa8771bb49304f9b72ddd89b60c3d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -31388,6 +31506,10 @@ PrefabInstance:
       propertyPath: timertext
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2520815895468854473, guid: fa473f43264c8dc4097a54079bee8370, type: 3}
+      propertyPath: exclamacion
+      value: 
+      objectReference: {fileID: 2092692624}
     - target: {fileID: 2520815895468854473, guid: fa473f43264c8dc4097a54079bee8370, type: 3}
       propertyPath: timerSlider
       value: 
@@ -33544,6 +33666,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -2758041869789433693, guid: 296305c78f59d5942a37a6d0aa66602a, type: 3}
   m_PrefabInstance: {fileID: 854623935}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1399659967 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 79a8ffc938ec2ca4ab6daaec58db72ff, type: 3}
+  m_PrefabInstance: {fileID: 212025687}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1403411490
 GameObject:
   m_ObjectHideFlags: 0
@@ -34258,7 +34385,8 @@ MonoBehaviour:
   texto_entrada: {fileID: 153357958}
   objectToActivate: {fileID: 36596258}
   objectToDeactivate: {fileID: 1911195121}
-  playlistController: {fileID: 777791255}
+  dualPlaylistController: {fileID: 777791255}
+  audioController: {fileID: 0}
   skyboxExposureChanger: {fileID: 588733017}
 --- !u!4 &1479734761
 Transform:
@@ -42167,3 +42295,4 @@ SceneRoots:
   - {fileID: 845751747}
   - {fileID: 588733018}
   - {fileID: 1937229316}
+  - {fileID: 212025687}

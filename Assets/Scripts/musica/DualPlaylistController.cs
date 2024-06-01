@@ -32,7 +32,28 @@ public class DualPlaylistController : MonoBehaviour
             audioSource = GetComponent<AudioSource>();
         }
 
-        PlayNextSong(); // Iniciar con la primera canción de la lista activa
+        PlayCurrentSong(); // Iniciar con la primera canción de la lista activa
+    }
+
+    void Update()
+    {
+        if (!audioSource.isPlaying && audioSource.clip != null)
+        {
+            PlayNextSong();
+        }
+    }
+
+    void PlayCurrentSong()
+    {
+        if (isUsingPlaylist1 && playlist1.Length > 0)
+        {
+            audioSource.clip = playlist1[currentSongIndex1]; // Configurar el nuevo clip
+        }
+        else if (!isUsingPlaylist1 && playlist2.Length > 0)
+        {
+            audioSource.clip = playlist2[currentSongIndex2]; // Configurar el nuevo clip
+        }
+        audioSource.Play(); // Reproducir
     }
 
     void PlayNextSong()
@@ -40,21 +61,19 @@ public class DualPlaylistController : MonoBehaviour
         if (isUsingPlaylist1)
         {
             currentSongIndex1 = (currentSongIndex1 + 1) % playlist1.Length; // Avanzar al siguiente índice
-            audioSource.clip = playlist1[currentSongIndex1]; // Configurar el nuevo clip
         }
         else
         {
             currentSongIndex2 = (currentSongIndex2 + 1) % playlist2.Length; // Avanzar al siguiente índice
-            audioSource.clip = playlist2[currentSongIndex2]; // Configurar el nuevo clip
         }
 
-        audioSource.Play(); // Reproducir
+        PlayCurrentSong(); // Reproducir la canción actual del índice actualizado
     }
 
     public void SwitchPlaylist(bool usePlaylist1)
     {
         isUsingPlaylist1 = usePlaylist1; // Cambiar la lista de reproducción
-        PlayNextSong(); // Reproducir la siguiente canción
+        PlayCurrentSong(); // Reproducir la primera canción de la nueva lista
     }
 
     public void Pause()
