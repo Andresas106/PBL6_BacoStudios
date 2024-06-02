@@ -17,12 +17,12 @@ public class StickerManage : MonoBehaviour
             if(code == 1)
             {
                 sticker1.SetActive(true);
-
+                sticker2.SetActive(false);
             }
             else
             {
                 sticker1.SetActive(false);
-                
+                sticker2.SetActive(true);
             }
         }
 
@@ -32,10 +32,12 @@ public class StickerManage : MonoBehaviour
             if (code == 1)
             {
                 sticker2.SetActive(true);
+                sticker1.SetActive(false);
             }
             else
             {
                 sticker2.SetActive(false);
+                sticker1.SetActive(true);
             }
         }
     }
