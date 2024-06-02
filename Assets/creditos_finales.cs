@@ -44,7 +44,7 @@ public class creditos_finales : MonoBehaviour
         if (finalCanvas != null)
         {
             finalCanvas.gameObject.SetActive(true);
-            Invoke("LoadNextScene", 10f); // Esperar 10 segundos antes de cambiar de escena
+            Invoke("LoadNextScene", 5f); // Esperar 5 segundos antes de cambiar de escena
         }
         else
         {
