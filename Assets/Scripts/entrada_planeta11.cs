@@ -11,6 +11,7 @@ public class entrada_planeta11 : MonoBehaviour
     [SerializeField] private GameObject text_entrada;
     [SerializeField] private GameObject canvas; // Reference to your canvas GameObject
     [SerializeField] private GameObject volverAlJuegoButton; // Reference to the "Volver al Juego" button
+    [SerializeField] private GameObject floaat;
 
     private SoundManager soundManager;
     private bool isCanvasActive = false; // Flag to track canvas state
@@ -37,6 +38,7 @@ public class entrada_planeta11 : MonoBehaviour
             isCanvasActive = true; // Set flag to indicate canvas activation
             canvas.SetActive(true); // Activate the canvas
             volverAlJuegoButton.SetActive(true); // Show the "Volver al Juego" button
+            floaat.GetComponent<RotationObject>().enabled = false;
         }
         soundManager.SeleccionAudio(0, 0.5f);
     }

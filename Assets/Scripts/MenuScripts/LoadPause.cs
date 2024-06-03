@@ -11,6 +11,8 @@ public class LoadPause : MonoBehaviour
     [SerializeField] private GameObject colecMenu;
     [SerializeField] private GameObject controlsMenu;
     [SerializeField] private AudioSource[] audioSourcesToIgnore;
+    [SerializeField] private DualPlaylistController audioPlaylist;
+    [SerializeField] private GameObject audioPause;
     private bool isPaused;
     
     // Start is called before the first frame update
@@ -33,30 +35,47 @@ public class LoadPause : MonoBehaviour
             pauseMenu.SetActive(true);
             Time.timeScale = 0;
             AudioListener.pause = true;
+            audioPlaylist.Pause();
+            audioPause.SetActive(true);
+
         }
         else if(isPaused && pauseMenu.activeInHierarchy && !optionsMenu.activeInHierarchy && !colecMenu.activeInHierarchy)
         {
             pauseMenu.SetActive(false);
             Time.timeScale = 1;
             AudioListener.pause = false;
+            audioPlaylist.Resume();
+            audioPause.SetActive(false);
         }
         else if(isPaused && optionsMenu.activeInHierarchy)
         {
             Time.timeScale = 1;
             optionsMenu.SetActive(false);
             AudioListener.pause = false;
+            audioPlaylist.Resume();
+            audioPause.SetActive(false);
         }
         else if(isPaused && colecMenu.activeInHierarchy)
         {
             Time.timeScale = 1;
             colecMenu.SetActive(false);
             AudioListener.pause = false;
+            audioPlaylist.Resume();
+            audioPause.SetActive(false);
         }
         else if(isPaused && controlsMenu.activeInHierarchy)
         {
             Time.timeScale = 1;
             controlsMenu.SetActive(false);
             AudioListener.pause = false;
+            audioPlaylist.Resume();
+            audioPause.SetActive(false);
         }
+    }
+
+
+    public void Resume()
+    {
+        audioPause.SetActive(false);
     }
 }

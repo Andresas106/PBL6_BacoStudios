@@ -12,6 +12,8 @@ public class DualPlaylistController : MonoBehaviour
     private bool isUsingPlaylist1 = true; // Indicador para saber qué lista se está usando
     private static DualPlaylistController instance; // Para evitar múltiples instancias
 
+    private bool enter = true;
+
     void Awake()
     {
         if (instance == null) // Asegurar solo una instancia
@@ -37,7 +39,7 @@ public class DualPlaylistController : MonoBehaviour
 
     void Update()
     {
-        if (!audioSource.isPlaying && audioSource.clip != null)
+        if (!audioSource.isPlaying && audioSource.clip != null && enter)
         {
             PlayNextSong();
         }
@@ -78,17 +80,14 @@ public class DualPlaylistController : MonoBehaviour
 
     public void Pause()
     {
-        if (audioSource.isPlaying)
-        {
-            audioSource.Pause();
-        }
+        enter = false;
+        audioSource.Pause();
     }
 
     public void Resume()
     {
-        if (!audioSource.isPlaying)
-        {
-            audioSource.Play();
-        }
+        enter = true;
+        audioSource.Play();
+
     }
 }
