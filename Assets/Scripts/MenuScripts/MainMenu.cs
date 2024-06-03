@@ -195,6 +195,12 @@ public class MainMenu : MonoBehaviour
         menu2Panel.SetActive(false);
     }
 
+    public void VolverAlJuegoFromLevel2() // Add a new method
+    {
+        // Load Level2_TheTyets scene using SceneManager
+        SceneManager.LoadScene("Level2_TheTyets");
+    }
+
 
 
 }
