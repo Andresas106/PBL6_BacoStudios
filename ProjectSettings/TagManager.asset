@@ -12,6 +12,7 @@ TagManager:
   - piano
   - Timer
   - water
+  - satelit
   layers:
   - Default
   - TransparentFX
