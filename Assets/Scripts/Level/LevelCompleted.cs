@@ -28,6 +28,11 @@ public class LevelCompleted : MonoBehaviour
     // Añadimos una referencia al SkyboxExposureChanger
     [SerializeField] private SkyboxExposureChanger skyboxExposureChanger;
 
+    // Añadimos una referencia al componente AudioSource
+    [SerializeField] private AudioSource audioSource;
+    // Añadimos una referencia al AudioClip
+    [SerializeField] private AudioClip stickerAudioClip;
+
     private void Awake()
     {
         if (!PlayerPrefs.HasKey("sticker1"))
@@ -91,6 +96,7 @@ public class LevelCompleted : MonoBehaviour
             if (timerScript.remainingTime >= 150)
             {
                 stickerText.SetActive(true);
+                ReproducirAudio(); // Reproduce el audio
                 PlayerPrefs.SetInt("sticker1", 1);
                 PlayerPrefs.Save();
             }
@@ -104,6 +110,7 @@ public class LevelCompleted : MonoBehaviour
             if (timerScript.remainingTime >= 150)
             {
                 stickerText.SetActive(true);
+                ReproducirAudio(); // Reproduce el audio
                 PlayerPrefs.SetInt("sticker2", 1);
                 PlayerPrefs.Save();
             }
@@ -119,6 +126,14 @@ public class LevelCompleted : MonoBehaviour
         if (objectToActivate != null)
         {
             objectToActivate.SetActive(true);
+        }
+    }
+    private void ReproducirAudio()
+    {
+        if (audioSource != null && stickerAudioClip != null)
+        {
+            audioSource.clip = stickerAudioClip;
+            audioSource.Play();
         }
     }
 }
