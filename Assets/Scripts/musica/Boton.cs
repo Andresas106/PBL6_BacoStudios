@@ -1,20 +1,19 @@
-using System.Collections;
 using UnityEngine;
 
 public class Boton : MonoBehaviour
 {
-    public AudioSource fuente;
-    public AudioClip clip;
+    public AudioSource fuente;  // Referencia al componente AudioSource
+    public AudioClip clip;      // Referencia al clip de audio que se reproducirá
 
-    // Start is called before the first frame update
+    // Start se llama antes de la primera actualización de frame
     void Start()
     {
-        fuente.clip = clip;
+        fuente.clip = clip;  // Asigna el clip de audio al AudioSource
     }
 
-    // Update is called once per frame
+    // Este método se llama cuando se presiona el botón
     public void Reproducir()
     {
-        fuente.Play();
+        fuente.Play();  // Reproduce el clip de audio
     }
 }
