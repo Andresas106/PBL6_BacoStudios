@@ -68,21 +68,11 @@ public class Video : MonoBehaviour
         else if (scene.name == "Video_despedida2")
         {
             // Cambiar de escena al terminar el video
-            SceneManager.LoadScene("video_final");
+            SceneManager.LoadScene("Video_final");
         }
-        else if (scene.name == "video_final")
+        else if (scene.name == "Video_final")
         {
-            // Busca el Canvas en la escena y actívalo al terminar el video
-            Canvas finalCanvas = FindObjectOfType<Canvas>();
-            if (finalCanvas != null)
-            {
-                finalCanvas.gameObject.SetActive(true);
-                Debug.Log("Final Canvas activado.");
-            }
-            else
-            {
-                Debug.LogError("Final Canvas no encontrado en la escena!");
-            }
+            SceneManager.LoadScene("MenuMain");
         }
     }
 }
