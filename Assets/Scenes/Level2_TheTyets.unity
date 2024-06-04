@@ -5453,6 +5453,7 @@ GameObject:
   - component: {fileID: 121839734}
   - component: {fileID: 121839733}
   - component: {fileID: 121839732}
+  - component: {fileID: 121839735}
   m_Layer: 5
   m_Name: Tornar (1)
   m_TagString: Untagged
@@ -5526,6 +5527,18 @@ MonoBehaviour:
       - m_Target: {fileID: 422773015}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: BackToMenuFromColec
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 121839735}
+        m_TargetAssemblyTypeName: Boton, Assembly-CSharp
+        m_MethodName: Reproducir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5632,6 +5645,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121839730}
   m_CullTransparentMesh: 1
+--- !u!114 &121839735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121839730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e415159933ff3674d95f5553ca408c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuente: {fileID: 177893661}
+  clip: {fileID: 8300000, guid: b6696c0f9d107c84891538b91636d17d, type: 3}
 --- !u!1 &124929749 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1599826595754709761, guid: c7b742a7c15cbb345bfac647e7973515, type: 3}
@@ -5955,6 +5982,134 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -745928167409971724, guid: 25b6093af226785439a3730feed550f7, type: 3}
+--- !u!1 &177893659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 177893660}
+  - component: {fileID: 177893661}
+  m_Layer: 0
+  m_Name: boton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &177893660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177893659}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1366545354}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &177893661
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177893659}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!64 &183059144
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22954,6 +23109,7 @@ GameObject:
   - component: {fileID: 911765543}
   - component: {fileID: 911765542}
   - component: {fileID: 911765541}
+  - component: {fileID: 911765544}
   m_Layer: 5
   m_Name: Tornar
   m_TagString: Untagged
@@ -23027,6 +23183,18 @@ MonoBehaviour:
       - m_Target: {fileID: 422773015}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: BackToMenuFromColec
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 911765544}
+        m_TargetAssemblyTypeName: Boton, Assembly-CSharp
+        m_MethodName: Reproducir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23133,6 +23301,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911765539}
   m_CullTransparentMesh: 1
+--- !u!114 &911765544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911765539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e415159933ff3674d95f5553ca408c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuente: {fileID: 177893661}
+  clip: {fileID: 8300000, guid: b6696c0f9d107c84891538b91636d17d, type: 3}
 --- !u!64 &923563315
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31078,6 +31260,7 @@ GameObject:
   - component: {fileID: 1227891558}
   - component: {fileID: 1227891557}
   - component: {fileID: 1227891556}
+  - component: {fileID: 1227891559}
   m_Layer: 5
   m_Name: Tornar
   m_TagString: Untagged
@@ -31151,6 +31334,18 @@ MonoBehaviour:
       - m_Target: {fileID: 422773015}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: BackToMenuFromOptions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1227891559}
+        m_TargetAssemblyTypeName: Boton, Assembly-CSharp
+        m_MethodName: Reproducir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31257,6 +31452,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227891554}
   m_CullTransparentMesh: 1
+--- !u!114 &1227891559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227891554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e415159933ff3674d95f5553ca408c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuente: {fileID: 177893661}
+  clip: {fileID: 8300000, guid: b6696c0f9d107c84891538b91636d17d, type: 3}
 --- !u!1 &1237466145
 GameObject:
   m_ObjectHideFlags: 0
@@ -32205,6 +32414,7 @@ Transform:
   - {fileID: 1315023079}
   - {fileID: 1858839920}
   - {fileID: 1047777852}
+  - {fileID: 177893660}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1367379597 stripped
@@ -44161,6 +44371,7 @@ GameObject:
   - component: {fileID: 1747792385}
   - component: {fileID: 1747792384}
   - component: {fileID: 1747792383}
+  - component: {fileID: 1747792386}
   m_Layer: 5
   m_Name: Tornar
   m_TagString: Untagged
@@ -44243,8 +44454,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6859626792039003761}
-        m_TargetAssemblyTypeName: LoadPause, Assembly-CSharp
+      - m_Target: {fileID: 1747792386}
+        m_TargetAssemblyTypeName: Boton, Assembly-CSharp
+        m_MethodName: Reproducir
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1858839923}
+        m_TargetAssemblyTypeName: DualPlaylistController, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
@@ -44364,6 +44587,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747792381}
   m_CullTransparentMesh: 1
+--- !u!114 &1747792386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747792381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e415159933ff3674d95f5553ca408c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuente: {fileID: 177893661}
+  clip: {fileID: 8300000, guid: b6696c0f9d107c84891538b91636d17d, type: 3}
 --- !u!1 &1763157624
 GameObject:
   m_ObjectHideFlags: 0
@@ -44376,6 +44613,7 @@ GameObject:
   - component: {fileID: 1763157628}
   - component: {fileID: 1763157627}
   - component: {fileID: 1763157626}
+  - component: {fileID: 1763157629}
   m_Layer: 5
   m_Name: Opcions
   m_TagString: Untagged
@@ -44449,6 +44687,18 @@ MonoBehaviour:
       - m_Target: {fileID: 422773015}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: LoadOptionsFromMenu2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1763157629}
+        m_TargetAssemblyTypeName: Boton, Assembly-CSharp
+        m_MethodName: Reproducir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -44555,6 +44805,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763157624}
   m_CullTransparentMesh: 1
+--- !u!114 &1763157629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763157624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e415159933ff3674d95f5553ca408c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuente: {fileID: 177893661}
+  clip: {fileID: 8300000, guid: b6696c0f9d107c84891538b91636d17d, type: 3}
 --- !u!1 &1772579771
 GameObject:
   m_ObjectHideFlags: 0
@@ -44643,6 +44907,7 @@ GameObject:
   - component: {fileID: 1795417111}
   - component: {fileID: 1795417110}
   - component: {fileID: 1795417109}
+  - component: {fileID: 1795417112}
   m_Layer: 5
   m_Name: Tornar
   m_TagString: Untagged
@@ -44716,6 +44981,18 @@ MonoBehaviour:
       - m_Target: {fileID: 422773015}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1795417112}
+        m_TargetAssemblyTypeName: Boton, Assembly-CSharp
+        m_MethodName: Reproducir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -44822,6 +45099,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1795417107}
   m_CullTransparentMesh: 1
+--- !u!114 &1795417112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795417107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e415159933ff3674d95f5553ca408c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuente: {fileID: 177893661}
+  clip: {fileID: 8300000, guid: b6696c0f9d107c84891538b91636d17d, type: 3}
 --- !u!1 &1818533830
 GameObject:
   m_ObjectHideFlags: 0
@@ -50346,6 +50637,7 @@ GameObject:
   - component: {fileID: 1867500030}
   - component: {fileID: 1867500029}
   - component: {fileID: 1867500028}
+  - component: {fileID: 1867500031}
   m_Layer: 5
   m_Name: Tornar
   m_TagString: Untagged
@@ -50419,6 +50711,18 @@ MonoBehaviour:
       - m_Target: {fileID: 422773015}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: BackToMenuFromControls
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1867500031}
+        m_TargetAssemblyTypeName: Boton, Assembly-CSharp
+        m_MethodName: Reproducir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -50525,6 +50829,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867500026}
   m_CullTransparentMesh: 1
+--- !u!114 &1867500031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867500026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e415159933ff3674d95f5553ca408c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuente: {fileID: 177893661}
+  clip: {fileID: 8300000, guid: b6696c0f9d107c84891538b91636d17d, type: 3}
 --- !u!1001 &1868041892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50536,6 +50854,26 @@ PrefabInstance:
     - target: {fileID: 617471524139482174, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 740086937564158389, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.046
+      objectReference: {fileID: 0}
+    - target: {fileID: 740086937564158389, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.055
+      objectReference: {fileID: 0}
+    - target: {fileID: 740086937564158389, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 965743666329349729, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_Range
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 965743666329349729, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_BounceIntensity
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1156763608280831489, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_Size
@@ -50551,15 +50889,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0175375
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.017537506
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.017537508
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50600,6 +50938,10 @@ PrefabInstance:
     - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 205.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5344592742254843774, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
       propertyPath: m_Name
@@ -57153,6 +57495,7 @@ GameObject:
   - component: {fileID: 2030131981}
   - component: {fileID: 2030131980}
   - component: {fileID: 2030131979}
+  - component: {fileID: 2030131982}
   m_Layer: 5
   m_Name: Sortir
   m_TagString: Untagged
@@ -57226,6 +57569,18 @@ MonoBehaviour:
       - m_Target: {fileID: 422773015}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: LoadMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2030131982}
+        m_TargetAssemblyTypeName: Boton, Assembly-CSharp
+        m_MethodName: Reproducir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -57332,6 +57687,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030131977}
   m_CullTransparentMesh: 1
+--- !u!114 &2030131982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030131977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e415159933ff3674d95f5553ca408c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuente: {fileID: 177893661}
+  clip: {fileID: 8300000, guid: b6696c0f9d107c84891538b91636d17d, type: 3}
 --- !u!65 &2032265613
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57472,6 +57841,7 @@ GameObject:
   - component: {fileID: 2046520835}
   - component: {fileID: 2046520834}
   - component: {fileID: 2046520833}
+  - component: {fileID: 2046520836}
   m_Layer: 5
   m_Name: Coleccionables
   m_TagString: Untagged
@@ -57545,6 +57915,18 @@ MonoBehaviour:
       - m_Target: {fileID: 422773015}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: LoadColecFromMenu2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2046520836}
+        m_TargetAssemblyTypeName: Boton, Assembly-CSharp
+        m_MethodName: Reproducir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -57651,6 +58033,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2046520831}
   m_CullTransparentMesh: 1
+--- !u!114 &2046520836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046520831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e415159933ff3674d95f5553ca408c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuente: {fileID: 177893661}
+  clip: {fileID: 8300000, guid: b6696c0f9d107c84891538b91636d17d, type: 3}
 --- !u!1 &2046905216
 GameObject:
   m_ObjectHideFlags: 0
@@ -58245,6 +58641,7 @@ GameObject:
   - component: {fileID: 2121545362}
   - component: {fileID: 2121545361}
   - component: {fileID: 2121545360}
+  - component: {fileID: 2121545363}
   m_Layer: 5
   m_Name: Controls
   m_TagString: Untagged
@@ -58318,6 +58715,18 @@ MonoBehaviour:
       - m_Target: {fileID: 422773015}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: LoadControlsFromMenu2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2121545363}
+        m_TargetAssemblyTypeName: Boton, Assembly-CSharp
+        m_MethodName: Reproducir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -58424,6 +58833,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121545358}
   m_CullTransparentMesh: 1
+--- !u!114 &2121545363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121545358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e415159933ff3674d95f5553ca408c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuente: {fileID: 177893661}
+  clip: {fileID: 8300000, guid: b6696c0f9d107c84891538b91636d17d, type: 3}
 --- !u!4 &2127451775 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710798627852471748, guid: 8670d3a33a033194eba89e82899a07ff, type: 3}
@@ -60001,6 +60424,7 @@ MonoBehaviour:
   controlsMenu: {fileID: 1866164686}
   audioSourcesToIgnore:
   - {fileID: 1047777851}
+  - {fileID: 177893661}
   audioPlaylist: {fileID: 1858839923}
   audioPause: {fileID: 1047777850}
 --- !u!114 &6859626792039003767
@@ -60024,6 +60448,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 660003702}
+  - {fileID: 1366545354}
   - {fileID: 1831987095}
   - {fileID: 1137675014}
   - {fileID: 1542874409}
@@ -60041,7 +60466,6 @@ SceneRoots:
   - {fileID: 2078442633}
   - {fileID: 631271768}
   - {fileID: 1431341075}
-  - {fileID: 1366545354}
   - {fileID: 2129676234}
   - {fileID: 1838472724}
   - {fileID: 403094468}
