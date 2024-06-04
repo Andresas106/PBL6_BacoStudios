@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.573
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.013412819, g: 0.03934181, b: 0.04892365, a: 0.573}
+  m_IndirectSpecularColor: {r: 0.013408894, g: 0.039341033, b: 0.048861638, a: 0.573}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -33589,7 +33589,6 @@ MonoBehaviour:
   objectToActivate: {fileID: 36596258}
   objectToDeactivate: {fileID: 1911195121}
   dualPlaylistController: {fileID: 777791255}
-  audioController: {fileID: 0}
   skyboxExposureChanger: {fileID: 588733017}
 --- !u!4 &1479734761
 Transform:
@@ -35900,6 +35899,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1665479657}
+  - component: {fileID: 1665479658}
   m_Layer: 0
   m_Name: StickerManage
   m_TagString: Untagged
@@ -35922,6 +35922,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1665479658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665479655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6fa80337d8a734ea8ce309dfd70b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sticker1: {fileID: 0}
+  sticker2: {fileID: 0}
 --- !u!1 &1671487652
 GameObject:
   m_ObjectHideFlags: 0
