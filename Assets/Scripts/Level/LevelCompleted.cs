@@ -22,15 +22,15 @@ public class LevelCompleted : MonoBehaviour
     private Scene m_Scene;
     private string sceneName;
 
-    // Añadimos referencias tanto para DualPlaylistController como para AudioController
+    // Aï¿½adimos referencias tanto para DualPlaylistController como para AudioController
     [SerializeField] private DualPlaylistController dualPlaylistController;
 
-    // Añadimos una referencia al SkyboxExposureChanger
+    // Aï¿½adimos una referencia al SkyboxExposureChanger
     [SerializeField] private SkyboxExposureChanger skyboxExposureChanger;
 
-    // Añadimos una referencia al componente AudioSource
+    // Aï¿½adimos una referencia al componente AudioSource
     [SerializeField] private AudioSource audioSource;
-    // Añadimos una referencia al AudioClip
+    // Aï¿½adimos una referencia al AudioClip
     [SerializeField] private AudioClip stickerAudioClip;
 
     private void Awake()
@@ -46,6 +46,19 @@ public class LevelCompleted : MonoBehaviour
             PlayerPrefs.SetInt("sticker2", 0);
             PlayerPrefs.Save();
         }
+
+        if (!PlayerPrefs.HasKey("entrada1"))
+        {
+            PlayerPrefs.SetInt("entrada1", 0);
+            PlayerPrefs.Save();
+        }
+
+        if (!PlayerPrefs.HasKey("entrada2"))
+        {
+            PlayerPrefs.SetInt("entrada2", 0);
+            PlayerPrefs.Save();
+        }
+
     }
 
     void Start()
@@ -62,14 +75,14 @@ public class LevelCompleted : MonoBehaviour
         if (notes.quantity == ObjectCount.MAX_QUANTITY && !enter)
         {
             enter = true;
-            // Inicia la conversación para que el jugador tenga la opción de ir al siguiente nivel
+            // Inicia la conversaciï¿½n para que el jugador tenga la opciï¿½n de ir al siguiente nivel
             ConversationManager.Instance.StartConversation(myConversation);
             ActivarEntrada();
             ObtenerSticker1();
             ObtenerSticker2();
-            SwitchActiveObjects(); // Llama al nuevo método
+            SwitchActiveObjects(); // Llama al nuevo mï¿½todo
 
-            // Inicia el cambio de exposición del skybox
+            // Inicia el cambio de exposiciï¿½n del skybox
             if (skyboxExposureChanger != null)
             {
                 skyboxExposureChanger.StartChangingExposure();

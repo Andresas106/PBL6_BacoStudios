@@ -39,6 +39,7 @@ public class entrada_planeta11 : MonoBehaviour
             canvas.SetActive(true); // Activate the canvas
             volverAlJuegoButton.SetActive(true); // Show the "Volver al Juego" button
             floaat.GetComponent<RotationObject>().enabled = false;
+            PlayerPrefs.SetInt("entrada2",1);
         }
         soundManager.SeleccionAudio(0, 0.5f);
     }
