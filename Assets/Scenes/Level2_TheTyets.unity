@@ -45981,9 +45981,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0d2e21378f599d1479b96c99751c3e83, type: 3}
   - {fileID: 8300000, guid: 76ef3192519d29f4fb7fd9f1eb56d19d, type: 3}
   playlist2:
-  - {fileID: 8300000, guid: a01b831625feaa445a31035f8e3cf309, type: 3}
-  - {fileID: 8300000, guid: 00d2de6effdff344490a973ad8de29da, type: 3}
-  - {fileID: 8300000, guid: d5d3c4ae32c20f9458072689dac7adc0, type: 3}
+  - {fileID: 8300000, guid: 308a0f8ff7610a84184834b8c7d3fa91, type: 3}
+  - {fileID: 8300000, guid: 67f491da0dea5d945a558e1db48e8341, type: 3}
+  - {fileID: 8300000, guid: e69e5c9944ca28e44a695c5bcdc68c36, type: 3}
 --- !u!1 &1861569960
 GameObject:
   m_ObjectHideFlags: 0
