@@ -9890,7 +9890,7 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.12
-  m_Height: 0.29
+  m_Height: 0.3
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &590129047
@@ -44985,8 +44985,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1858839923}
-        m_TargetAssemblyTypeName: DualPlaylistController, Assembly-CSharp
+      - m_Target: {fileID: 6859626792039003761}
+        m_TargetAssemblyTypeName: LoadPause, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
