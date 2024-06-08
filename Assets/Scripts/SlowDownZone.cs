@@ -23,9 +23,9 @@ public class SlowDownZone : MonoBehaviour
     // Cuando un objeto entra en la zona de desaceleración
     private void OnTriggerEnter(Collider other)
     {
-        if(gameObject.tag == "piano") IsOnPiano = true;
-        if(gameObject.tag == "water") IsOnWater = true;
-        
+        if (gameObject.tag == "piano") IsOnPiano = true;
+        if (gameObject.tag == "water") IsOnWater = true;
+
     }
 
     private void OnTriggerStay(Collider other)
@@ -58,12 +58,12 @@ public class SlowDownZone : MonoBehaviour
         {
             rb.MovePosition(rb.position + direction * (movementSpeed * 3 * Time.deltaTime));
         }
-        else if(!isRunning && IsOnPiano)
+        else if (!isRunning && IsOnPiano)
         {
-            
+
             rb.MovePosition(rb.position + direction * (movementSpeed * 2 * Time.deltaTime));
         }
-        else if(isRunning && IsOnWater)
+        else if (isRunning && IsOnWater)
         {
             rb.MovePosition(rb.position + direction * (movementSpeed * Time.deltaTime));
         }
