@@ -13,11 +13,11 @@ Nuestro intrépido alien se embarcará en la tarea de recorrer cada uno de estos
 Este proyecto es un trabajo de la universidad y **no** acepta contribuidores externos.
 
 ## Contacto
-```
-Monroig Marcipar, Joel: <joel.monroig@estudiantat.upc.edu>
-Verdes Wolukanis, Andreu: <andreu.verdes@estudiantat.upc.edu>
-Andújar Arjona, Paula: <paula.andujar@estudiantat.upc.edu>
-Escobedo Rosado, Berta: <berta.escobedo@estudiantat.upc.edu>
-Melgares Carmona, Lucas: <lucas.melgares@estudiantat.upc.edu>
-Chen, Xin: <xin.chen2@estudiantat.upc.edu>
-```
+
+- Monroig Marcipar, Joel: <joel.monroig@estudiantat.upc.edu>
+- Verdes Wolukanis, Andreu: <andreu.verdes@estudiantat.upc.edu>
+- Andújar Arjona, Paula: <paula.andujar@estudiantat.upc.edu>
+- Escobedo Rosado, Berta: <berta.escobedo@estudiantat.upc.edu>
+- Melgares Carmona, Lucas: <lucas.melgares@estudiantat.upc.edu>
+- Chen, Xin: <xin.chen2@estudiantat.upc.edu>
+
