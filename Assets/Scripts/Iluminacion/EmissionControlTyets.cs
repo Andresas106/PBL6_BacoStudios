@@ -6,7 +6,7 @@ public class EmissionControlTyets : MonoBehaviour
     public Color emissionColor = Color.white;  // El color de la emisión
     private Material targetMaterial;
     private Color originalEmissionColor;
-    private bool isInsideTrigger = false;
+    private int playerCount = 0;  // Contador para objetos con la etiqueta "Player"
 
     void Start()
     {
@@ -39,12 +39,13 @@ public class EmissionControlTyets : MonoBehaviour
     {
         if (other.CompareTag("Player")) // Verificar la etiqueta del objeto
         {
+            playerCount++;
+
             if (targetMaterial != null)
             {
                 // Encender la emisión
                 targetMaterial.EnableKeyword("_EMISSION");
                 targetMaterial.SetColor("_EmissionColor", emissionColor);
-                isInsideTrigger = true;
             }
         }
     }
@@ -53,27 +54,25 @@ public class EmissionControlTyets : MonoBehaviour
     {
         if (other.CompareTag("Player")) // Verificar la etiqueta del objeto
         {
-            if (targetMaterial != null)
+            playerCount--;
+
+            if (targetMaterial != null && playerCount <= 0)
             {
                 // Apagar la emisión solo si realmente se sale del trigger
-                if (isInsideTrigger)
-                {
-                    targetMaterial.SetColor("_EmissionColor", originalEmissionColor);
-                    targetMaterial.DisableKeyword("_EMISSION");
-                    isInsideTrigger = false;
-                }
+                targetMaterial.SetColor("_EmissionColor", originalEmissionColor);
+                targetMaterial.DisableKeyword("_EMISSION");
+                playerCount = 0;  // Asegurarse de que el contador no sea negativo
             }
         }
     }
 
     void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player") && targetMaterial != null && !isInsideTrigger) // Verificar la etiqueta del objeto
+        if (other.CompareTag("Player") && targetMaterial != null) // Verificar la etiqueta del objeto
         {
             // Asegurarse de que la emisión sigue encendida mientras está dentro del trigger
             targetMaterial.EnableKeyword("_EMISSION");
             targetMaterial.SetColor("_EmissionColor", emissionColor);
-            isInsideTrigger = true;
         }
     }
 }
