@@ -45,6 +45,7 @@ public class ConversationTimerOut : MonoBehaviour
                 keyE.SetActive(false);
                 ConversationManager.Instance.StartConversation(myConversation);
                 once = false;
+                myTrigger.SetActive(false);
             }
         }
     }
